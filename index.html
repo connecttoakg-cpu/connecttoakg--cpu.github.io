@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -69,7 +67,7 @@
     nav ul {
       list-style: none;
       display: flex;
-      gap: 32px;
+      gap: 30px;
     }
 
     nav ul li a {
@@ -95,8 +93,10 @@
     .hero {
       min-height: 650px;
       background:
-        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-        url("images/hero.jpg") center/cover no-repeat;
+        linear-gradient(rgba(0,0,0,0.52), rgba(0,0,0,0.62)),
+        url("https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=2000&q=85")
+        center/cover no-repeat;
+
       display: flex;
       align-items: center;
       justify-content: center;
@@ -178,7 +178,8 @@
       margin-bottom: 55px;
     }
 
-    .section-heading .small-title {
+    .section-heading .small-title,
+    .small-title {
       color: #b98a2f;
       font-weight: bold;
       letter-spacing: 3px;
@@ -221,7 +222,7 @@
 
     .product-card img {
       width: 100%;
-      height: 300px;
+      height: 320px;
       object-fit: cover;
       display: block;
     }
@@ -357,7 +358,7 @@
 
     .gallery-grid img {
       width: 100%;
-      height: 250px;
+      height: 270px;
       object-fit: cover;
       transition: 0.3s;
     }
@@ -370,7 +371,9 @@
     .cta {
       background:
         linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.72)),
-        url("images/cta.jpg") center/cover no-repeat;
+        url("https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=2000&q=85")
+        center/cover no-repeat;
+
       color: white;
       text-align: center;
     }
@@ -503,7 +506,7 @@
       align-items: center;
       justify-content: center;
       text-decoration: none;
-      font-size: 28px;
+      font-size: 25px;
       z-index: 999;
       box-shadow: 0 5px 20px rgba(0,0,0,0.25);
     }
@@ -589,9 +592,11 @@
     Welcome to Carryol
   </div>
 
+
   <!-- NAVIGATION -->
   <header>
     <nav>
+
       <div class="logo">
         CARRY<span>OL</span>
       </div>
@@ -604,11 +609,14 @@
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#contact" class="nav-btn">Get a Quote</a></li>
       </ul>
+
     </nav>
   </header>
 
+
   <!-- HERO -->
   <section class="hero" id="home">
+
     <div class="hero-content">
 
       <h1>
@@ -622,6 +630,7 @@
       </p>
 
       <div class="hero-buttons">
+
         <a href="#products" class="btn btn-primary">
           Explore Products
         </a>
@@ -629,10 +638,13 @@
         <a href="#contact" class="btn btn-outline">
           Contact Us
         </a>
+
       </div>
 
     </div>
+
   </section>
+
 
   <!-- PRODUCTS -->
   <section class="products" id="products">
@@ -640,23 +652,35 @@
     <div class="container">
 
       <div class="section-heading">
-        <div class="small-title">Our Collection</div>
 
-        <h2>Windows & Doors</h2>
+        <div class="small-title">
+          Our Collection
+        </div>
+
+        <h2>
+          Windows & Doors
+        </h2>
 
         <p>
           Discover strong, stylish and long-lasting GI solutions
           designed for modern homes and buildings.
         </p>
+
       </div>
+
 
       <div class="product-grid">
 
+
+        <!-- MAIN DOOR -->
         <div class="product-card">
-          <img src="images/gi-main-door.jpg"
-               alt="GI Main Door">
+
+          <img
+            src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85"
+            alt="Premium GI Main Door">
 
           <div class="product-info">
+
             <h3>GI Main Doors</h3>
 
             <p>
@@ -667,15 +691,21 @@
             <a href="#contact" class="product-link">
               Enquire Now →
             </a>
+
           </div>
+
         </div>
 
 
+        <!-- DESIGNER DOOR -->
         <div class="product-card">
-          <img src="images/designer-door.jpg"
-               alt="Designer GI Door">
+
+          <img
+            src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=85"
+            alt="Designer Door">
 
           <div class="product-info">
+
             <h3>Designer Doors</h3>
 
             <p>
@@ -686,15 +716,21 @@
             <a href="#contact" class="product-link">
               Enquire Now →
             </a>
+
           </div>
+
         </div>
 
 
+        <!-- WINDOW -->
         <div class="product-card">
-          <img src="images/gi-window.jpg"
-               alt="GI Window">
+
+          <img
+            src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85"
+            alt="Modern GI Window">
 
           <div class="product-info">
+
             <h3>GI Windows</h3>
 
             <p>
@@ -705,12 +741,15 @@
             <a href="#contact" class="product-link">
               Enquire Now →
             </a>
+
           </div>
+
         </div>
 
       </div>
 
     </div>
+
   </section>
 
 
@@ -722,24 +761,23 @@
       <div class="about-grid">
 
         <div class="about-image">
-          <img src="images/factory.jpg"
-               alt="Carryol Manufacturing">
+
+          <img
+            src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1400&q=85"
+            alt="Carryol Manufacturing">
+
         </div>
+
 
         <div class="about-text">
 
-          <div class="section-heading"
-               style="text-align:left;margin-bottom:20px;">
-
-            <div class="small-title">
-              About Carryol
-            </div>
-
-            <h2>
-              Strength You Can Trust
-            </h2>
-
+          <div class="small-title">
+            About Carryol
           </div>
+
+          <h2>
+            Strength You Can Trust
+          </h2>
 
           <p>
             Carryol is focused on manufacturing premium
@@ -759,8 +797,7 @@
             built for long-term performance.
           </p>
 
-          <a href="#contact"
-             class="btn btn-primary">
+          <a href="#contact" class="btn btn-primary">
             Talk to Us
           </a>
 
@@ -769,6 +806,7 @@
       </div>
 
     </div>
+
   </section>
 
 
@@ -793,6 +831,7 @@
         </p>
 
       </div>
+
 
       <div class="feature-grid">
 
@@ -835,6 +874,7 @@
       </div>
 
     </div>
+
   </section>
 
 
@@ -893,6 +933,7 @@
       </div>
 
     </div>
+
   </section>
 
 
@@ -912,8 +953,7 @@
         </h2>
 
         <p>
-          Replace these images with photographs of
-          your actual products and factory.
+          Premium doors and windows for modern spaces.
         </p>
 
       </div>
@@ -921,21 +961,26 @@
 
       <div class="gallery-grid">
 
-        <img src="images/gallery-1.jpg"
-             alt="Carryol Product">
+        <img
+          src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=85"
+          alt="Modern Door">
 
-        <img src="images/gallery-2.jpg"
-             alt="Carryol Door">
+        <img
+          src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1000&q=85"
+          alt="Modern Window">
 
-        <img src="images/gallery-3.jpg"
-             alt="Carryol Window">
+        <img
+          src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1000&q=85"
+          alt="Window Design">
 
-        <img src="images/gallery-4.jpg"
-             alt="Carryol Work">
+        <img
+          src="https://images.unsplash.com/photo-1600566753051-f0b89df2dd90?auto=format&fit=crop&w=1000&q=85"
+          alt="Door Design">
 
       </div>
 
     </div>
+
   </section>
 
 
@@ -954,8 +999,7 @@
         customization and project requirements.
       </p>
 
-      <a href="#contact"
-         class="btn btn-primary">
+      <a href="#contact" class="btn btn-primary">
         Get a Quote
       </a>
 
@@ -970,6 +1014,7 @@
     <div class="container">
 
       <div class="contact-grid">
+
 
         <div class="contact-info">
 
@@ -986,37 +1031,66 @@
             can help you choose the right product.
           </p>
 
+
           <div class="contact-item">
+
             <strong>Phone</strong>
-            +91 XXXXX XXXXX
+
+            <a
+              href="tel:+919286726207"
+              style="color:#222;text-decoration:none;">
+
+              +91 9286726207
+
+            </a>
+
           </div>
 
+
           <div class="contact-item">
+
+            <strong>WhatsApp</strong>
+
+            <a
+              href="https://wa.me/919286726207"
+              target="_blank"
+              style="color:#222;text-decoration:none;">
+
+              Chat with us on WhatsApp
+
+            </a>
+
+          </div>
+
+
+          <div class="contact-item">
+
             <strong>Email</strong>
-            info@carryol.com
-          </div>
 
-          <div class="contact-item">
-            <strong>Address</strong>
-            Your Company Address, India
+            info@carryol.com
+
           </div>
 
         </div>
 
 
+        <!-- ENQUIRY FORM -->
         <form onsubmit="sendMessage(event)">
 
-          <input type="text"
-                 id="name"
-                 placeholder="Your Name"
-                 required>
+          <input
+            type="text"
+            id="name"
+            placeholder="Your Name"
+            required>
 
-          <input type="tel"
-                 id="phone"
-                 placeholder="Phone Number"
-                 required>
+          <input
+            type="tel"
+            id="phone"
+            placeholder="Phone Number"
+            required>
 
           <select id="product" required>
+
             <option value="">
               Select Product
             </option>
@@ -1036,16 +1110,22 @@
             <option>
               Other
             </option>
+
           </select>
 
-          <textarea id="message"
-                    placeholder="Tell us about your requirement..."
-                    required></textarea>
+
+          <textarea
+            id="message"
+            placeholder="Tell us about your requirement..."
+            required></textarea>
+
 
           <button
             type="submit"
             class="btn btn-primary">
+
             Send Enquiry
+
           </button>
 
         </form>
@@ -1053,6 +1133,7 @@
       </div>
 
     </div>
+
   </section>
 
 
@@ -1062,55 +1143,84 @@
     <div class="footer-grid">
 
       <div>
+
         <h3>CARRYOL</h3>
 
         <p>
           Premium galvanized iron windows and doors
           built for strength, security and modern living.
         </p>
+
       </div>
 
 
       <div>
+
         <h3>Quick Links</h3>
 
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#products">Products</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#why-us">Why Carryol</a></li>
-          <li><a href="#contact">Contact</a></li>
+
+          <li>
+            <a href="#home">Home</a>
+          </li>
+
+          <li>
+            <a href="#products">Products</a>
+          </li>
+
+          <li>
+            <a href="#about">About Us</a>
+          </li>
+
+          <li>
+            <a href="#why-us">Why Carryol</a>
+          </li>
+
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+
         </ul>
+
       </div>
 
 
       <div>
+
         <h3>Products</h3>
 
         <ul>
+
           <li>GI Main Doors</li>
           <li>Designer Doors</li>
           <li>GI Windows</li>
           <li>Custom Solutions</li>
+
         </ul>
+
       </div>
 
     </div>
 
 
     <div class="copyright">
+
       © 2026 Carryol. All Rights Reserved.
+
     </div>
 
   </footer>
 
 
-  <!-- WHATSAPP -->
-  <a class="whatsapp"
-     href="https://wa.me/91XXXXXXXXXX"
-     target="_blank"
-     aria-label="WhatsApp">
-    ☎
+  <!-- WHATSAPP BUTTON -->
+  <a
+    class="whatsapp"
+    href="https://wa.me/919286726207"
+    target="_blank"
+    aria-label="WhatsApp">
+
+    💬
+
   </a>
 
 
@@ -1135,7 +1245,7 @@
 
 
       const whatsappNumber =
-        "91XXXXXXXXXX";
+        "919286726207";
 
 
       const text =
@@ -1157,6 +1267,7 @@ ${message}`;
 
 
       window.open(url, "_blank");
+
     }
 
   </script>
