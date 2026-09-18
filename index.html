@@ -1,30 +1,668 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-</head>
-<body>
-    <h1></h1>
-    <img src="Images/Screenshot_20260918_164713.jpg" alt="Image 1">
-    <br>
-    <img src="Images/Screenshot_20260918_164726.jpg" alt="Image 2">
-    <br>
-    <img src="Images/Screenshot_20260918_164818.jpg" alt="Image 3">
-    <br>
-    <img src="Images/Screenshot_20260918_164847.jpg" alt="Image 4">
-    <br>
-    <img src="Images/Screenshot_20260918_164914.jpg" alt="Image 5">
-    <br>
-    <img src="Images/Screenshot_20260918_165003.jpg" alt="Image 6">
-    <br>
-    <img src="Images/Screenshot_20260918_165018.jpg" alt="Image 7">
-    <br>
-    <img src="Images/Screenshot_20260918_165042.jpg" alt="Image 8">
-    <br>
-    <img src="Images/Screenshot_20260918_165116.jpg" alt="Image 9">
-    <br>
-    <img src="Images/Screenshot_20260918_165140.jpg" alt="Image 10">
-</body>
-</html>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Welcome to C-A-R-R-Y-O-L | GI Windows & Doors</title>
+
+  <meta name="description"
+        content="Carryol manufactures premium galvanized iron windows and doors designed for strength, security, durability and modern homes.">
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #222;
+      background: #f7f7f7;
+      line-height: 1.6;
+    }
+
+    /* =====================================
+       WELCOME BAR - FIRST THING ON WEBSITE
+    ====================================== */
+
+    .welcome-bar {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 12px 15px;
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 3px;
+    }
+
+    /* =====================================
+       NAVIGATION
+    ====================================== */
+
+    header {
+      background: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    }
+
+    nav {
+      max-width: 1250px;
+      margin: auto;
+      height: 75px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 25px;
+    }
+
+    .logo {
+      font-size: 30px;
+      font-weight: 800;
+      letter-spacing: 3px;
+      color: #111;
+    }
+
+    .logo span {
+      color: #b98a2f;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 32px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #222;
+      font-size: 15px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #b98a2f;
+    }
+
+    .nav-btn {
+      background: #b98a2f;
+      color: white !important;
+      padding: 12px 20px;
+      border-radius: 3px;
+    }
+
+    /* =====================================
+       HERO
+    ====================================== */
+
+    .hero {
+      min-height: 650px;
+
+      background:
+        linear-gradient(
+          rgba(0,0,0,0.55),
+          rgba(0,0,0,0.55)
+        ),
+        url("images/hero.jpg") center/cover no-repeat;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      text-align: center;
+      color: white;
+
+      padding: 40px 20px;
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 6vw, 78px);
+      line-height: 1.05;
+      margin-bottom: 25px;
+      font-weight: 800;
+    }
+
+    .hero h1 span {
+      color: #d3a94e;
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 700px;
+      margin: auto auto 35px;
+      color: #eee;
+    }
+
+    .hero-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 30px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 3px;
+      transition: 0.3s;
+    }
+
+    .btn-primary {
+      background: #b98a2f;
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background: #d0a345;
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      border: 1px solid white;
+      color: white;
+    }
+
+    .btn-outline:hover {
+      background: white;
+      color: #111;
+    }
+
+    /* =====================================
+       COMMON
+    ====================================== */
+
+    section {
+      padding: 90px 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 55px;
+    }
+
+    .section-heading .small-title,
+    .small-title {
+      color: #b98a2f;
+      font-weight: bold;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-size: 13px;
+    }
+
+    .section-heading h2 {
+      font-size: 42px;
+      margin-top: 10px;
+    }
+
+    .section-heading p {
+      max-width: 650px;
+      margin: 15px auto;
+      color: #666;
+    }
+
+    /* =====================================
+       PRODUCTS
+    ====================================== */
+
+    .products {
+      background: #fff;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .product-card {
+      background: #f5f5f5;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .product-info {
+      padding: 25px;
+    }
+
+    .product-info h3 {
+      font-size: 23px;
+      margin-bottom: 8px;
+    }
+
+    .product-info p {
+      color: #666;
+      font-size: 15px;
+    }
+
+    .product-link {
+      display: inline-block;
+      margin-top: 15px;
+      color: #b98a2f;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* =====================================
+       ABOUT
+    ====================================== */
+
+    .about {
+      background: #eeeeee;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .about-image img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+    }
+
+    .about-text h2 {
+      font-size: 43px;
+      margin-bottom: 20px;
+    }
+
+    .about-text p {
+      color: #555;
+      margin-bottom: 18px;
+    }
+
+    /* =====================================
+       FEATURES
+    ====================================== */
+
+    .features {
+      background: #111;
+      color: white;
+    }
+
+    .features .section-heading p {
+      color: #bbb;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 25px;
+    }
+
+    .feature {
+      border: 1px solid #333;
+      padding: 35px 25px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .feature:hover {
+      border-color: #b98a2f;
+      transform: translateY(-5px);
+    }
+
+    .feature-icon {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .feature h3 {
+      margin-bottom: 10px;
+    }
+
+    .feature p {
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    /* =====================================
+       GI SECTION
+    ====================================== */
+
+    .gi-section {
+      background: #fff;
+    }
+
+    .gi-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+    }
+
+    .gi-box {
+      padding: 35px;
+      background: #f4f4f4;
+      border-left: 4px solid #b98a2f;
+    }
+
+    .gi-box h3 {
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+
+    .gi-box p {
+      color: #666;
+    }
+
+    /* =====================================
+       GALLERY
+    ====================================== */
+
+    .gallery {
+      background: #eeeeee;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      transition: 0.3s;
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.03);
+    }
+
+    /* =====================================
+       CTA
+    ====================================== */
+
+    .cta {
+      background:
+        linear-gradient(
+          rgba(0,0,0,0.72),
+          rgba(0,0,0,0.72)
+        ),
+        url("images/cta.jpg") center/cover no-repeat;
+
+      color: white;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+
+    .cta p {
+      max-width: 650px;
+      margin: 0 auto 30px;
+      color: #ddd;
+    }
+
+    /* =====================================
+       CONTACT
+    ====================================== */
+
+    .contact {
+      background: white;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+    }
+
+    .contact-info h2 {
+      font-size: 38px;
+      margin-bottom: 20px;
+    }
+
+    .contact-item {
+      margin: 20px 0;
+    }
+
+    .contact-item strong {
+      display: block;
+      margin-bottom: 4px;
+      color: #b98a2f;
+    }
+
+    form {
+      background: #f4f4f4;
+      padding: 35px;
+    }
+
+    input,
+    textarea,
+    select {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      font-size: 15px;
+      background: white;
+    }
+
+    textarea {
+      height: 130px;
+      resize: vertical;
+    }
+
+    button {
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      font-size: 16px;
+    }
+
+    /* =====================================
+       FOOTER
+    ====================================== */
+
+    footer {
+      background: #0c0c0c;
+      color: #aaa;
+      padding: 50px 20px 25px;
+    }
+
+    .footer-grid {
+      max-width: 1200px;
+      margin: auto;
+
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+
+      gap: 40px;
+    }
+
+    footer h3 {
+      color: white;
+      margin-bottom: 15px;
+    }
+
+    footer p {
+      font-size: 14px;
+    }
+
+    footer ul {
+      list-style: none;
+    }
+
+    footer ul li {
+      margin: 8px 0;
+    }
+
+    footer a {
+      color: #aaa;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #d3a94e;
+    }
+
+    .copyright {
+      text-align: center;
+      border-top: 1px solid #222;
+      margin-top: 40px;
+      padding-top: 20px;
+      font-size: 13px;
+    }
+
+    /* =====================================
+       FINAL IMAGES
+       THESE WILL COME AFTER FOOTER
+    ====================================== */
+
+    .final-images {
+      background: #111;
+      padding: 25px 10px 40px;
+    }
+
+    .final-images img {
+      display: block;
+
+      width: 100%;
+      max-width: 1400px;
+
+      height: auto;
+
+      margin: 0 auto 20px;
+
+      border-radius: 0;
+
+      box-shadow: 0 5px 20px rgba(0,0,0,0.35);
+    }
+
+    .final-images img:last-child {
+      margin-bottom: 0;
+    }
+
+    /* =====================================
+       WHATSAPP
+    ====================================== */
+
+    .whatsapp {
+      position: fixed;
+
+      right: 20px;
+      bottom: 20px;
+
+      width: 58px;
+      height: 58px;
+
+      border-radius: 50%;
+
+      background: #25d366;
+      color: white;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      text-decoration: none;
+      font-size: 28px;
+
+      z-index: 999;
+
+      box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+    }
+
+    /* =====================================
+       RESPONSIVE
+    ====================================== */
+
+    @media (max-width: 900px) {
+
+      nav ul {
+        gap: 15px;
+      }
+
+      .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 650px) {
+
+      .welcome-bar {
+        font-size: 13px;
+        letter-spacing: 2px;
+      }
+
+      nav {
+        height: auto;
+        padding: 18px;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+      }
+
+      .hero {
+        min-height: 570px;
+      }
+
+      .hero h1 {
+        font-size: 45px;
+      }
+
+      .section-heading h2 {
+        font-size: 34px;
+      }
+
+      .product-grid,
+      .feature-grid,
+      .gi-grid,
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-image img {
