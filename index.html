@@ -1,111 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Welcome to C-A-R-R-Y-O-L | GI Windows & Doors</title>
+    <title>CARRYOL | Galvanized Iron Doors & Main Gates</title>
 
-  <meta name="description"
-        content="Carryol manufactures premium galvanized iron windows and doors designed for strength, security, durability and modern homes.">
+    <meta name="description" content="CARRYOL - Premium Galvanized Iron Doors, Double Doors, Single Doors, Door Window Doors and Main Gate Doors.">
 
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      color: #222;
-      background: #f7f7f7;
-      line-height: 1.6;
-    }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #222;
+            background: #f7f7f7;
+            line-height: 1.6;
+        }
 
-    /* =====================================
-       WELCOME BAR - FIRST THING ON WEBSITE
-    ====================================== */
+        /* NAVBAR */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0,0,0,0.92);
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
 
-    .welcome-bar {
-      background: #111;
-      color: #fff;
-      text-align: center;
-      padding: 12px 15px;
-      font-size: 16px;
-      font-weight: bold;
-      letter-spacing: 3px;
-    }
+        nav {
+            max-width: 1200px;
+            margin: auto;
+            height: 75px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 25px;
+        }
 
-    /* =====================================
-       NAVIGATION
-    ====================================== */
+        .logo {
+            color: white;
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: 3px;
+        }
 
-    header {
-      background: #fff;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-    }
+        .logo span {
+            color: #d49a3a;
+        }
 
-    nav {
-      max-width: 1250px;
-      margin: auto;
-      height: 75px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 25px;
-    }
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
 
-    .logo {
-      font-size: 30px;
-      font-weight: 800;
-      letter-spacing: 3px;
-      color: #111;
-    }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
 
-    .logo span {
-      color: #b98a2f;
-    }
+        nav ul li a:hover {
+            color: #d49a3a;
+        }
 
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 32px;
-    }
+        /* HERO */
+        .hero {
+            min-height: 100vh;
+            background:
+                linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.70)),
+                url("https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=2000&q=85")
+                center/cover no-repeat;
 
-    nav ul li a {
-      text-decoration: none;
-      color: #222;
-      font-size: 15px;
-      font-weight: 600;
-      transition: 0.3s;
-    }
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 100px 20px 50px;
+        }
 
-    nav ul li a:hover {
-      color: #b98a2f;
-    }
+        .hero-content {
+            max-width: 900px;
+            color: white;
+        }
 
-    .nav-btn {
-      background: #b98a2f;
-      color: white !important;
-      padding: 12px 20px;
-      border-radius: 3px;
-    }
+        .hero-content h1 {
+            font-size: clamp(45px, 8vw, 90px);
+            letter-spacing: 8px;
+            margin-bottom: 15px;
+            font-weight: 900;
+        }
 
-    /* =====================================
-       HERO
-    ====================================== */
+        .hero-content h1 span {
+            color: #d49a3a;
+        }
 
-    .hero {
-      min-height: 650px;
+        .hero-content h2 {
+            font-size: clamp(22px, 4vw, 38px);
+            margin-bottom: 20px;
+        }
 
-      background:
-        linear-gradient(
-          rgba(0,0,0,0.55),
-          rgba(0,0,0,0.55)
-        ),
+        .hero-content p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: auto;
+            color: #eee        ),
         url("images/hero.jpg") center/cover no-repeat;
 
       display: flex;
