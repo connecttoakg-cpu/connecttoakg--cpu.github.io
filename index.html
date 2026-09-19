@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
   <title>Welcome to Carryol | GI Windows & Doors</title>
 
@@ -25,105 +29,104 @@
       line-height: 1.6;
     }
 
-    /* =====================================
-       FIRST OPENING WELCOME SCREEN
-       ===================================== */
-
-    #welcome-screen {
-      position: fixed;
-      inset: 0;
-      background: #111;
-      color: white;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      text-align: center;
-
-      z-index: 99999;
-
-      animation: welcomeFade 1s ease 2.4s forwards;
-    }
-
-    .welcome-content {
-      padding: 20px;
-    }
-
-    .welcome-content h1 {
-      font-size: clamp(38px, 7vw, 78px);
-      letter-spacing: 3px;
-      font-weight: 800;
-      margin-bottom: 15px;
-    }
-
-    .welcome-content h1 span {
-      color: #d3a94e;
-    }
-
-    .welcome-content p {
-      color: #ccc;
-      font-size: 17px;
-      letter-spacing: 2px;
-    }
-
-    @keyframes welcomeFade {
-
-      to {
-        opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
-      }
-
-    }
-
 
     /* =====================================
-       TOP WELCOME BAR
-       ===================================== */
+       WELCOME BAR
+       IMAGE BACKGROUND
+    ====================================== */
 
     .welcome-bar {
-      background: #111;
+
+      position: relative;
+
+      background:
+        linear-gradient(
+          rgba(0,0,0,0.65),
+          rgba(0,0,0,0.65)
+        ),
+        url("Images/welcome-bg.png")
+        center center / cover no-repeat;
+
       color: #fff;
+
       text-align: center;
 
-      padding: 9px 15px;
+      min-height: 100px;
 
-      font-size: 14px;
-      letter-spacing: 1px;
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      padding: 20px;
+
+      font-size: 25px;
+
+      font-weight: bold;
+
+      letter-spacing: 4px;
+
+      text-transform: uppercase;
+
+      overflow: hidden;
+    }
+
+
+    .welcome-text {
+
+      position: relative;
+
+      z-index: 2;
+
+      text-shadow:
+        2px 2px 5px rgba(0,0,0,0.8),
+        0 0 15px rgba(0,0,0,0.7);
+
     }
 
 
     /* =====================================
        NAVIGATION
-       ===================================== */
+    ====================================== */
 
     header {
+
       background: #fff;
 
       position: sticky;
+
       top: 0;
 
       z-index: 1000;
 
-      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      box-shadow:
+        0 2px 12px rgba(0,0,0,0.08);
     }
 
+
     nav {
+
       max-width: 1250px;
+
       margin: auto;
 
-      min-height: 75px;
+      height: 75px;
 
       display: flex;
+
       align-items: center;
+
       justify-content: space-between;
 
       padding: 0 25px;
     }
 
+
     .logo {
+
       font-size: 30px;
+
       font-weight: 800;
 
       letter-spacing: 3px;
@@ -131,11 +134,15 @@
       color: #111;
     }
 
+
     .logo span {
+
       color: #b98a2f;
     }
 
+
     nav ul {
+
       list-style: none;
 
       display: flex;
@@ -143,22 +150,29 @@
       gap: 32px;
     }
 
+
     nav ul li a {
+
       text-decoration: none;
 
       color: #222;
 
       font-size: 15px;
+
       font-weight: 600;
 
       transition: 0.3s;
     }
 
+
     nav ul li a:hover {
+
       color: #b98a2f;
     }
 
+
     .nav-btn {
+
       background: #b98a2f;
 
       color: white !important;
@@ -171,7 +185,7 @@
 
     /* =====================================
        HERO
-       ===================================== */
+    ====================================== */
 
     .hero {
 
@@ -188,6 +202,7 @@
       display: flex;
 
       align-items: center;
+
       justify-content: center;
 
       text-align: center;
@@ -197,9 +212,12 @@
       padding: 40px 20px;
     }
 
+
     .hero-content {
+
       max-width: 850px;
     }
+
 
     .hero h1 {
 
@@ -212,9 +230,12 @@
       font-weight: 800;
     }
 
+
     .hero h1 span {
+
       color: #d3a94e;
     }
+
 
     .hero p {
 
@@ -227,6 +248,7 @@
       color: #eee;
     }
 
+
     .hero-buttons {
 
       display: flex;
@@ -237,6 +259,7 @@
 
       flex-wrap: wrap;
     }
+
 
     .btn {
 
@@ -253,12 +276,14 @@
       transition: 0.3s;
     }
 
+
     .btn-primary {
 
       background: #b98a2f;
 
       color: #fff;
     }
+
 
     .btn-primary:hover {
 
@@ -267,12 +292,14 @@
       transform: translateY(-2px);
     }
 
+
     .btn-outline {
 
       border: 1px solid white;
 
       color: white;
     }
+
 
     .btn-outline:hover {
 
@@ -284,11 +311,13 @@
 
     /* =====================================
        COMMON
-       ===================================== */
+    ====================================== */
 
     section {
+
       padding: 90px 20px;
     }
+
 
     .container {
 
@@ -297,12 +326,14 @@
       margin: auto;
     }
 
+
     .section-heading {
 
       text-align: center;
 
       margin-bottom: 55px;
     }
+
 
     .small-title {
 
@@ -317,12 +348,14 @@
       font-size: 13px;
     }
 
+
     .section-heading h2 {
 
       font-size: 42px;
 
       margin-top: 10px;
     }
+
 
     .section-heading p {
 
@@ -336,20 +369,24 @@
 
     /* =====================================
        PRODUCTS
-       ===================================== */
+    ====================================== */
 
     .products {
+
       background: #fff;
     }
+
 
     .product-grid {
 
       display: grid;
 
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns:
+        repeat(3, 1fr);
 
       gap: 25px;
     }
+
 
     .product-card {
 
@@ -360,6 +397,7 @@
       transition: 0.3s;
     }
 
+
     .product-card:hover {
 
       transform: translateY(-8px);
@@ -367,6 +405,7 @@
       box-shadow:
         0 15px 35px rgba(0,0,0,0.12);
     }
+
 
     .product-card img {
 
@@ -379,10 +418,12 @@
       display: block;
     }
 
+
     .product-info {
 
       padding: 25px;
     }
+
 
     .product-info h3 {
 
@@ -391,12 +432,14 @@
       margin-bottom: 8px;
     }
 
+
     .product-info p {
 
       color: #666;
 
       font-size: 15px;
     }
+
 
     .product-link {
 
@@ -414,22 +457,26 @@
 
     /* =====================================
        ABOUT
-       ===================================== */
+    ====================================== */
 
     .about {
+
       background: #eeeeee;
     }
+
 
     .about-grid {
 
       display: grid;
 
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns:
+        1fr 1fr;
 
       gap: 60px;
 
       align-items: center;
     }
+
 
     .about-image img {
 
@@ -440,12 +487,14 @@
       object-fit: cover;
     }
 
+
     .about-text h2 {
 
       font-size: 43px;
 
       margin-bottom: 20px;
     }
+
 
     .about-text p {
 
@@ -457,7 +506,7 @@
 
     /* =====================================
        FEATURES
-       ===================================== */
+    ====================================== */
 
     .features {
 
@@ -466,10 +515,12 @@
       color: white;
     }
 
+
     .features .section-heading p {
 
       color: #bbb;
     }
+
 
     .feature-grid {
 
@@ -480,6 +531,7 @@
 
       gap: 25px;
     }
+
 
     .feature {
 
@@ -492,12 +544,14 @@
       transition: 0.3s;
     }
 
+
     .feature:hover {
 
       border-color: #b98a2f;
 
       transform: translateY(-5px);
     }
+
 
     .feature-icon {
 
@@ -506,10 +560,12 @@
       margin-bottom: 15px;
     }
 
+
     .feature h3 {
 
       margin-bottom: 10px;
     }
+
 
     .feature p {
 
@@ -520,13 +576,14 @@
 
 
     /* =====================================
-       WHY GI
-       ===================================== */
+       GI SECTION
+    ====================================== */
 
     .gi-section {
 
       background: #fff;
     }
+
 
     .gi-grid {
 
@@ -538,15 +595,16 @@
       gap: 25px;
     }
 
+
     .gi-box {
 
       padding: 35px;
 
       background: #f4f4f4;
 
-      border-left:
-        4px solid #b98a2f;
+      border-left: 4px solid #b98a2f;
     }
+
 
     .gi-box h3 {
 
@@ -554,6 +612,7 @@
 
       font-size: 22px;
     }
+
 
     .gi-box p {
 
@@ -563,12 +622,13 @@
 
     /* =====================================
        GALLERY
-       ===================================== */
+    ====================================== */
 
     .gallery {
 
       background: #eeeeee;
     }
+
 
     .gallery-grid {
 
@@ -579,6 +639,7 @@
 
       gap: 15px;
     }
+
 
     .gallery-grid img {
 
@@ -591,6 +652,7 @@
       transition: 0.3s;
     }
 
+
     .gallery-grid img:hover {
 
       transform: scale(1.03);
@@ -599,17 +661,15 @@
 
     /* =====================================
        CTA
-       ===================================== */
+    ====================================== */
 
     .cta {
 
       background:
-
         linear-gradient(
           rgba(0,0,0,0.72),
           rgba(0,0,0,0.72)
         ),
-
         url("images/cta.jpg")
         center/cover no-repeat;
 
@@ -618,12 +678,14 @@
       text-align: center;
     }
 
+
     .cta h2 {
 
       font-size: 48px;
 
       margin-bottom: 15px;
     }
+
 
     .cta p {
 
@@ -637,12 +699,13 @@
 
     /* =====================================
        CONTACT
-       ===================================== */
+    ====================================== */
 
     .contact {
 
       background: white;
     }
+
 
     .contact-grid {
 
@@ -654,6 +717,7 @@
       gap: 50px;
     }
 
+
     .contact-info h2 {
 
       font-size: 38px;
@@ -661,10 +725,12 @@
       margin-bottom: 20px;
     }
 
+
     .contact-item {
 
       margin: 20px 0;
     }
+
 
     .contact-item strong {
 
@@ -675,12 +741,14 @@
       color: #b98a2f;
     }
 
+
     form {
 
       background: #f4f4f4;
 
       padding: 35px;
     }
+
 
     input,
     textarea,
@@ -699,12 +767,14 @@
       background: white;
     }
 
+
     textarea {
 
       height: 130px;
 
       resize: vertical;
     }
+
 
     button {
 
@@ -720,7 +790,7 @@
 
     /* =====================================
        FOOTER
-       ===================================== */
+    ====================================== */
 
     footer {
 
@@ -728,9 +798,9 @@
 
       color: #aaa;
 
-      padding:
-        50px 20px 25px;
+      padding: 50px 20px 25px;
     }
+
 
     .footer-grid {
 
@@ -746,6 +816,7 @@
       gap: 40px;
     }
 
+
     footer h3 {
 
       color: white;
@@ -753,20 +824,24 @@
       margin-bottom: 15px;
     }
 
+
     footer p {
 
       font-size: 14px;
     }
+
 
     footer ul {
 
       list-style: none;
     }
 
+
     footer ul li {
 
       margin: 8px 0;
     }
+
 
     footer a {
 
@@ -775,17 +850,18 @@
       text-decoration: none;
     }
 
+
     footer a:hover {
 
       color: #d3a94e;
     }
 
+
     .copyright {
 
       text-align: center;
 
-      border-top:
-        1px solid #222;
+      border-top: 1px solid #222;
 
       margin-top: 40px;
 
@@ -797,67 +873,50 @@
 
     /* =====================================
        FINAL 10 IMAGES
-       FOOTER KE BAAD
-       ===================================== */
+       AFTER FOOTER
+       ALL SAME SIZE
+    ====================================== */
 
     .final-images {
 
       background: #111;
 
-      padding:
-        35px 15px 50px;
+      padding: 25px 10px 40px;
     }
 
-    .final-images-title {
 
-      text-align: center;
+    .final-images img {
 
-      color: #fff;
-
-      margin-bottom: 25px;
-
-      font-size: 24px;
-
-      letter-spacing: 1px;
-    }
-
-    .final-image {
-
-      width: min(1400px, 100%);
-
-      height: 420px;
-
-      margin:
-        0 auto 20px;
-
-      display: flex;
-
-      align-items: center;
-
-      justify-content: center;
-
-      background: #f8f8f8;
-
-      overflow: hidden;
-
-      border-radius: 4px;
-    }
-
-    .final-image img {
+      display: block;
 
       width: 100%;
 
-      height: 100%;
+      max-width: 1400px;
 
-      object-fit: contain;
+      height: 500px;
 
-      display: block;
+      object-fit: cover;
+
+      object-position: center;
+
+      margin: 0 auto 20px;
+
+      border-radius: 0;
+
+      box-shadow:
+        0 5px 20px rgba(0,0,0,0.35);
+    }
+
+
+    .final-images img:last-child {
+
+      margin-bottom: 0;
     }
 
 
     /* =====================================
        WHATSAPP
-       ===================================== */
+    ====================================== */
 
     .whatsapp {
 
@@ -896,7 +955,7 @@
 
     /* =====================================
        RESPONSIVE
-       ===================================== */
+    ====================================== */
 
     @media (max-width: 900px) {
 
@@ -905,11 +964,13 @@
         gap: 15px;
       }
 
+
       .product-grid {
 
         grid-template-columns:
           repeat(2, 1fr);
       }
+
 
       .feature-grid {
 
@@ -917,21 +978,36 @@
           repeat(2, 1fr);
       }
 
+
       .gallery-grid {
 
         grid-template-columns:
           repeat(2, 1fr);
       }
 
+
       .about-grid,
       .contact-grid {
 
         grid-template-columns: 1fr;
       }
+
     }
 
 
     @media (max-width: 650px) {
+
+      .welcome-bar {
+
+        min-height: 90px;
+
+        font-size: 17px;
+
+        letter-spacing: 2px;
+
+        padding: 15px;
+      }
+
 
       nav {
 
@@ -944,6 +1020,7 @@
         gap: 15px;
       }
 
+
       nav ul {
 
         flex-wrap: wrap;
@@ -953,20 +1030,24 @@
         gap: 15px;
       }
 
+
       .hero {
 
         min-height: 570px;
       }
+
 
       .hero h1 {
 
         font-size: 45px;
       }
 
+
       .section-heading h2 {
 
         font-size: 34px;
       }
+
 
       .product-grid,
       .feature-grid,
@@ -976,42 +1057,42 @@
         grid-template-columns: 1fr;
       }
 
+
       .about-image img {
 
         height: 350px;
       }
+
 
       .cta h2 {
 
         font-size: 35px;
       }
 
+
       .footer-grid {
 
         grid-template-columns: 1fr;
       }
 
-      /* MOBILE FINAL IMAGES */
 
-      .final-image {
+      .final-images {
+
+        padding: 15px 5px 25px;
+      }
+
+
+      .final-images img {
 
         height: 250px;
+
+        margin-bottom: 10px;
       }
 
-      .welcome-content h1 {
-
-        font-size: 38px;
-
-        letter-spacing: 2px;
-      }
-
-      .welcome-content p {
-
-        font-size: 14px;
-      }
     }
 
   </style>
+
 </head>
 
 
@@ -1019,50 +1100,29 @@
 
 
   <!-- =====================================
-       FIRST SCREEN
-       ===================================== -->
+       WELCOME
+       BACKGROUND IMAGE
+  ====================================== -->
 
-  <div id="welcome-screen">
+  <div class="welcome-bar">
 
-    <div class="welcome-content">
-
-      <h1>
-        Welcome to
-        <span>Carryol</span>
-      </h1>
-
-      <p>
-        GI WINDOWS &amp; DOORS
-      </p>
-
+    <div class="welcome-text">
+      Welcome to Carryol
     </div>
 
   </div>
 
 
   <!-- =====================================
-       TOP WELCOME BAR
-       ===================================== -->
-
-  <div class="welcome-bar">
-
-    Welcome to Carryol
-
-  </div>
-
-
-  <!-- =====================================
        NAVIGATION
-       ===================================== -->
+  ====================================== -->
 
   <header>
 
     <nav>
 
       <div class="logo">
-
         CARRY<span>OL</span>
-
       </div>
 
 
@@ -1074,11 +1134,13 @@
           </a>
         </li>
 
+
         <li>
           <a href="#products">
             Products
           </a>
         </li>
+
 
         <li>
           <a href="#about">
@@ -1086,11 +1148,13 @@
           </a>
         </li>
 
+
         <li>
           <a href="#why-us">
             Why Carryol
           </a>
         </li>
+
 
         <li>
           <a href="#gallery">
@@ -1098,12 +1162,11 @@
           </a>
         </li>
 
+
         <li>
           <a href="#contact"
              class="nav-btn">
-
             Get a Quote
-
           </a>
         </li>
 
@@ -1116,7 +1179,7 @@
 
   <!-- =====================================
        HERO
-       ===================================== -->
+  ====================================== -->
 
   <section class="hero"
            id="home">
@@ -1124,21 +1187,14 @@
     <div class="hero-content">
 
       <h1>
-
         Built Strong.<br>
-
-        <span>
-          Designed Better.
-        </span>
-
+        <span>Designed Better.</span>
       </h1>
 
 
       <p>
-
-        Premium Galvanized Iron Windows &amp; Doors
+        Premium Galvanized Iron Windows & Doors
         crafted for security, durability and modern living.
-
       </p>
 
 
@@ -1146,17 +1202,13 @@
 
         <a href="#products"
            class="btn btn-primary">
-
           Explore Products
-
         </a>
 
 
         <a href="#contact"
            class="btn btn-outline">
-
           Contact Us
-
         </a>
 
       </div>
@@ -1168,7 +1220,7 @@
 
   <!-- =====================================
        PRODUCTS
-       ===================================== -->
+  ====================================== -->
 
   <section class="products"
            id="products">
@@ -1181,15 +1233,15 @@
           Our Collection
         </div>
 
+
         <h2>
-          Windows &amp; Doors
+          Windows & Doors
         </h2>
 
+
         <p>
-
-          Discover strong, stylish and long-lasting GI
-          solutions designed for modern homes and buildings.
-
+          Discover strong, stylish and long-lasting GI solutions
+          designed for modern homes and buildings.
         </p>
 
       </div>
@@ -1200,9 +1252,9 @@
 
         <div class="product-card">
 
-          <img
-            src="images/gi-main-door.jpg"
-            alt="GI Main Door">
+          <img src="images/gi-main-door.jpg"
+               alt="GI Main Door">
+
 
           <div class="product-info">
 
@@ -1210,18 +1262,16 @@
               GI Main Doors
             </h3>
 
-            <p>
 
+            <p>
               Strong and elegant galvanized iron doors
               designed to create a secure entrance.
-
             </p>
+
 
             <a href="#contact"
                class="product-link">
-
               Enquire Now →
-
             </a>
 
           </div>
@@ -1231,9 +1281,9 @@
 
         <div class="product-card">
 
-          <img
-            src="images/designer-door.jpg"
-            alt="Designer GI Door">
+          <img src="images/designer-door.jpg"
+               alt="Designer GI Door">
+
 
           <div class="product-info">
 
@@ -1241,18 +1291,16 @@
               Designer Doors
             </h3>
 
-            <p>
 
+            <p>
               Contemporary designs combining premium
               appearance with dependable strength.
-
             </p>
+
 
             <a href="#contact"
                class="product-link">
-
               Enquire Now →
-
             </a>
 
           </div>
@@ -1262,9 +1310,9 @@
 
         <div class="product-card">
 
-          <img
-            src="images/gi-window.jpg"
-            alt="GI Window">
+          <img src="images/gi-window.jpg"
+               alt="GI Window">
+
 
           <div class="product-info">
 
@@ -1272,24 +1320,21 @@
               GI Windows
             </h3>
 
-            <p>
 
+            <p>
               Durable galvanized iron windows made for
               ventilation, security and long-term performance.
-
             </p>
+
 
             <a href="#contact"
                class="product-link">
-
               Enquire Now →
-
             </a>
 
           </div>
 
         </div>
-
 
       </div>
 
@@ -1300,7 +1345,7 @@
 
   <!-- =====================================
        ABOUT
-       ===================================== -->
+  ====================================== -->
 
   <section class="about"
            id="about">
@@ -1312,68 +1357,54 @@
 
         <div class="about-image">
 
-          <img
-            src="images/factory.jpg"
-            alt="Carryol Manufacturing">
+          <img src="images/factory.jpg"
+               alt="Carryol Manufacturing">
 
         </div>
 
 
         <div class="about-text">
 
-
           <div class="section-heading"
                style="text-align:left;margin-bottom:20px;">
 
             <div class="small-title">
-
               About Carryol
-
             </div>
 
+
             <h2>
-
               Strength You Can Trust
-
             </h2>
 
           </div>
 
 
           <p>
-
             Carryol is focused on manufacturing premium
             galvanized iron windows and doors for homes,
             commercial spaces and modern construction projects.
-
           </p>
 
 
           <p>
-
             Our products are designed with a focus on
             strength, security, durability and contemporary
             aesthetics.
-
           </p>
 
 
           <p>
-
             From everyday homes to large projects,
             Carryol aims to deliver dependable products
             built for long-term performance.
-
           </p>
 
 
           <a href="#contact"
              class="btn btn-primary">
-
             Talk to Us
-
           </a>
-
 
         </div>
 
@@ -1386,33 +1417,28 @@
 
   <!-- =====================================
        WHY CARRYOL
-       ===================================== -->
+  ====================================== -->
 
   <section class="features"
            id="why-us">
 
     <div class="container">
 
-
       <div class="section-heading">
 
         <div class="small-title">
-
           Why Carryol
-
         </div>
 
+
         <h2>
-
           Made for the Long Run
-
         </h2>
 
-        <p>
 
+        <p>
           Every Carryol product is designed around
           quality, performance and everyday usability.
-
         </p>
 
       </div>
@@ -1427,15 +1453,15 @@
             🛡️
           </div>
 
+
           <h3>
-            Strong &amp; Secure
+            Strong & Secure
           </h3>
 
-          <p>
 
+          <p>
             Robust construction designed to provide
             dependable security.
-
           </p>
 
         </div>
@@ -1447,15 +1473,15 @@
             ⚙️
           </div>
 
+
           <h3>
             Durable Build
           </h3>
 
-          <p>
 
+          <p>
             GI construction engineered for long-lasting
             everyday performance.
-
           </p>
 
         </div>
@@ -1467,15 +1493,15 @@
             ✨
           </div>
 
+
           <h3>
             Modern Designs
           </h3>
 
-          <p>
 
+          <p>
             Contemporary designs that complement
             modern architecture.
-
           </p>
 
         </div>
@@ -1487,19 +1513,18 @@
             🔧
           </div>
 
+
           <h3>
             Low Maintenance
           </h3>
 
-          <p>
 
+          <p>
             Practical products designed to reduce
             maintenance requirements.
-
           </p>
 
         </div>
-
 
       </div>
 
@@ -1510,25 +1535,21 @@
 
   <!-- =====================================
        WHY GI
-       ===================================== -->
+  ====================================== -->
 
   <section class="gi-section">
 
     <div class="container">
 
-
       <div class="section-heading">
 
         <div class="small-title">
-
           The Carryol Advantage
-
         </div>
 
+
         <h2>
-
           Why Galvanized Iron?
-
         </h2>
 
       </div>
@@ -1543,11 +1564,10 @@
             01 — Corrosion Protection
           </h3>
 
-          <p>
 
+          <p>
             Galvanized surfaces are designed to provide
             enhanced protection against corrosion.
-
           </p>
 
         </div>
@@ -1559,11 +1579,10 @@
             02 — Long-Term Performance
           </h3>
 
-          <p>
 
+          <p>
             A strong material choice for doors and windows
             intended for long-term use.
-
           </p>
 
         </div>
@@ -1575,11 +1594,10 @@
             03 — Strong Construction
           </h3>
 
-          <p>
 
+          <p>
             GI provides a solid foundation for durable
             window and door structures.
-
           </p>
 
         </div>
@@ -1591,15 +1609,13 @@
             04 — Modern Finish
           </h3>
 
-          <p>
 
+          <p>
             Combine strength with clean designs suitable
             for contemporary architecture.
-
           </p>
 
         </div>
-
 
       </div>
 
@@ -1610,33 +1626,28 @@
 
   <!-- =====================================
        GALLERY
-       ===================================== -->
+  ====================================== -->
 
   <section class="gallery"
            id="gallery">
 
     <div class="container">
 
-
       <div class="section-heading">
 
         <div class="small-title">
-
           Our Work
-
         </div>
 
+
         <h2>
-
           Explore Carryol
-
         </h2>
 
-        <p>
 
+        <p>
           Replace these images with photographs of
           your actual products and factory.
-
         </p>
 
       </div>
@@ -1644,21 +1655,20 @@
 
       <div class="gallery-grid">
 
-        <img
-          src="images/gallery-1.jpg"
-          alt="Carryol Product">
+        <img src="images/gallery-1.jpg"
+             alt="Carryol Product">
 
-        <img
-          src="images/gallery-2.jpg"
-          alt="Carryol Door">
 
-        <img
-          src="images/gallery-3.jpg"
-          alt="Carryol Window">
+        <img src="images/gallery-2.jpg"
+             alt="Carryol Door">
 
-        <img
-          src="images/gallery-4.jpg"
-          alt="Carryol Work">
+
+        <img src="images/gallery-3.jpg"
+             alt="Carryol Window">
+
+
+        <img src="images/gallery-4.jpg"
+             alt="Carryol Work">
 
       </div>
 
@@ -1669,33 +1679,27 @@
 
   <!-- =====================================
        CTA
-       ===================================== -->
+  ====================================== -->
 
   <section class="cta">
 
     <div class="container">
 
       <h2>
-
         Let's Build Something Strong.
-
       </h2>
 
 
       <p>
-
         Looking for premium GI windows or doors?
         Talk to Carryol for product information,
         customization and project requirements.
-
       </p>
 
 
       <a href="#contact"
          class="btn btn-primary">
-
         Get a Quote
-
       </a>
 
     </div>
@@ -1705,39 +1709,31 @@
 
   <!-- =====================================
        CONTACT
-       ===================================== -->
+  ====================================== -->
 
   <section class="contact"
            id="contact">
 
     <div class="container">
 
-
       <div class="contact-grid">
 
 
         <div class="contact-info">
 
-
           <div class="small-title">
-
             Contact Carryol
-
           </div>
 
 
           <h2>
-
             Tell Us What You Need
-
           </h2>
 
 
           <p>
-
             Share your requirement and our team
             can help you choose the right product.
-
           </p>
 
 
@@ -1747,7 +1743,7 @@
               Phone
             </strong>
 
-            +91 XXXXX XXXXX
+            7270822500
 
           </div>
 
@@ -1769,10 +1765,9 @@
               Address
             </strong>
 
-            Your Company Address, India
+            नई बस्ती, बालागंज, लखनऊ
 
           </div>
-
 
         </div>
 
@@ -1784,35 +1779,40 @@
             type="text"
             id="name"
             placeholder="Your Name"
-            required>
+            required
+          >
 
 
           <input
             type="tel"
             id="phone"
             placeholder="Phone Number"
-            required>
+            required
+          >
 
 
-          <select
-            id="product"
-            required>
+          <select id="product"
+                  required>
 
             <option value="">
               Select Product
             </option>
 
+
             <option>
               GI Main Door
             </option>
+
 
             <option>
               Designer Door
             </option>
 
+
             <option>
               GI Window
             </option>
+
 
             <option>
               Other
@@ -1824,8 +1824,8 @@
           <textarea
             id="message"
             placeholder="Tell us about your requirement..."
-            required>
-          </textarea>
+            required
+          ></textarea>
 
 
           <button
@@ -1836,9 +1836,7 @@
 
           </button>
 
-
         </form>
-
 
       </div>
 
@@ -1849,7 +1847,7 @@
 
   <!-- =====================================
        FOOTER
-       ===================================== -->
+  ====================================== -->
 
   <footer>
 
@@ -1863,11 +1861,10 @@
           CARRYOL
         </h3>
 
-        <p>
 
+        <p>
           Premium galvanized iron windows and doors
           built for strength, security and modern living.
-
         </p>
 
       </div>
@@ -1879,6 +1876,7 @@
           Quick Links
         </h3>
 
+
         <ul>
 
           <li>
@@ -1887,11 +1885,13 @@
             </a>
           </li>
 
+
           <li>
             <a href="#products">
               Products
             </a>
           </li>
+
 
           <li>
             <a href="#about">
@@ -1899,11 +1899,13 @@
             </a>
           </li>
 
+
           <li>
             <a href="#why-us">
               Why Carryol
             </a>
           </li>
+
 
           <li>
             <a href="#contact">
@@ -1922,19 +1924,23 @@
           Products
         </h3>
 
+
         <ul>
 
           <li>
             GI Main Doors
           </li>
 
+
           <li>
             Designer Doors
           </li>
 
+
           <li>
             GI Windows
           </li>
+
 
           <li>
             Custom Solutions
@@ -1943,7 +1949,6 @@
         </ul>
 
       </div>
-
 
     </div>
 
@@ -1954,138 +1959,96 @@
 
     </div>
 
-
   </footer>
 
 
   <!-- =====================================
        FINAL 10 IMAGES
-       FOOTER KE BILKUL BAAD
-       ===================================== -->
+       AFTER FOOTER
+  ====================================== -->
 
-  <section
-    class="final-images"
-    id="final-images">
+  <section class="final-images">
 
 
-    <h2 class="final-images-title">
-
-      Carryol Product Information
-
-    </h2>
-
-
-    <div class="final-image">
-
-      <img
-        src="images/carryol-1.jpg"
-        alt="Carryol Information 1">
-
-    </div>
+    <img
+      src="Images/Screenshot_20260918_164713.jpg"
+      alt="Carryol Image 1"
+    >
 
 
-    <div class="final-image">
-
-      <img
-        src="images/carryol-2.jpg"
-        alt="Carryol Information 2">
-
-    </div>
+    <img
+      src="Images/Screenshot_20260918_164726.jpg"
+      alt="Carryol Image 2"
+    >
 
 
-    <div class="final-image">
-
-      <img
-        src="images/carryol-3.jpg"
-        alt="Carryol Information 3">
-
-    </div>
+    <img
+      src="Images/Screenshot_20260918_164818.jpg"
+      alt="Carryol Image 3"
+    >
 
 
-    <div class="final-image">
-
-      <img
-        src="images/carryol-4.jpg"
-        alt="Carryol Information 4">
-
-    </div>
+    <img
+      src="Images/Screenshot_20260918_164847.jpg"
+      alt="Carryol Image 4"
+    >
 
 
-    <div class="final-image">
-
-      <img
-        src="images/carryol-5.jpg"
-        alt="Carryol Information 5">
-
-    </div>
+    <img
+      src="Images/Screenshot_20260918_164914.jpg"
+      alt="Carryol Image 5"
+    >
 
 
-    <div class="final-image">
-
-      <img
-        src="images/carryol-6.jpg"
-        alt="Carryol Information 6">
-
-    </div>
+    <img
+      src="Images/Screenshot_20260918_165003.jpg"
+      alt="Carryol Image 6"
+    >
 
 
-    <div class="final-image">
-
-      <img
-        src="images/carryol-7.jpg"
-        alt="Carryol Information 7">
-
-    </div>
+    <img
+      src="Images/Screenshot_20260918_165018.jpg"
+      alt="Carryol Image 7"
+    >
 
 
-    <div class="final-image">
-
-      <img
-        src="images/carryol-8.jpg"
-        alt="Carryol Information 8">
-
-    </div>
+    <img
+      src="Images/Screenshot_20260918_165042.jpg"
+      alt="Carryol Image 8"
+    >
 
 
-    <div class="final-image">
-
-      <img
-        src="images/carryol-9.jpg"
-        alt="Carryol Information 9">
-
-    </div>
+    <img
+      src="Images/Screenshot_20260918_165116.jpg"
+      alt="Carryol Image 9"
+    >
 
 
-    <div class="final-image">
-
-      <img
-        src="images/carryol-10.jpg"
-        alt="Carryol Information 10">
-
-    </div>
-
+    <img
+      src="Images/Screenshot_20260918_165140.jpg"
+      alt="Carryol Image 10"
+    >
 
   </section>
 
 
   <!-- =====================================
        WHATSAPP
-       ===================================== -->
+  ====================================== -->
 
   <a
     class="whatsapp"
-    href="https://wa.me/91XXXXXXXXXX"
+    href="https://wa.me/917270822500"
     target="_blank"
-    aria-label="WhatsApp">
-
+    aria-label="WhatsApp"
+  >
     ☎
-
   </a>
 
 
   <!-- =====================================
        JAVASCRIPT
-       ===================================== -->
+  ====================================== -->
 
   <script>
 
@@ -2110,23 +2073,15 @@
         document.getElementById("message").value;
 
 
-      /*
-       * यहाँ अपना WhatsApp नंबर डालें
-       * उदाहरण:
-       * 919876543210
-       */
-
       const whatsappNumber =
-        "91XXXXXXXXXX";
+        "917270822500";
 
 
       const text =
 `Hello Carryol,
 
 Name: ${name}
-
 Phone: ${phone}
-
 Product: ${product}
 
 Requirement:
@@ -2140,10 +2095,7 @@ ${message}`;
         encodeURIComponent(text);
 
 
-      window.open(
-        url,
-        "_blank"
-      );
+      window.open(url, "_blank");
 
     }
 
@@ -2151,4 +2103,5 @@ ${message}`;
 
 
 </body>
+
 </html>
