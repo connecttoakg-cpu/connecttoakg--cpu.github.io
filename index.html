@@ -2,111 +2,106 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CARRYOL | Galvanize G I Doors</title>
 
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial;color:#222;line-height:1.5}
+header{padding:18px 7%;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 10px #ddd;position:sticky;top:0;background:#fff;z-index:5}
+.logo{font-size:28px;font-weight:bold;letter-spacing:3px}.logo span{color:#b22222}
+nav a{color:#222;text-decoration:none;margin-left:18px;font-weight:bold}
+.hero{min-height:550px;padding:40px 20px;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;background:linear-gradient(#0008,#0008),url("https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80") center/cover}
+.hero h1{font-size:55px}.hero h2{font-size:25px;font-weight:normal;margin:8px}.hero p{font-size:18px;margin:15px}
+.btn{display:inline-block;background:#b22222;color:#fff;text-decoration:none;padding:12px 22px;margin:5px;border-radius:3px;font-weight:bold}
+section{padding:60px 7%}.title{text-align:center;margin-bottom:30px}.title h2,.contact h2{font-size:35px}
+.title p{color:#666}
+.products{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+.card{border:1px solid #ddd;background:#fff;overflow:hidden}
+.card img{width:100%;height:210px;object-fit:cover}
+.card div{padding:15px}.card h3{font-size:19px;margin-bottom:8px}.card p{color:#666;font-size:14px}
+.about{text-align:center;background:#f5f5f5}.about p{max-width:800px;margin:8px auto;color:#555}
+.contact{text-align:center;background:#fafafa}.contact p{margin:8px}.contact a:not(.btn){color:#b22222;font-weight:bold}
+footer{text-align:center;background:#111;color:#fff;padding:30px 15px}footer p{color:#ccc;margin:5px}
 
-body{
-    font-family:Arial,sans-serif;
-    color:#222;
-    line-height:1.6;
+@media(max-width:1000px){.products{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){
+header{display:block;text-align:center}nav{margin-top:10px}nav a{margin:0 6px;font-size:13px}
+.hero{min-height:500px}.hero h1{font-size:40px}.hero h2{font-size:20px}
+.products{grid-template-columns:1fr}.title h2,.contact h2{font-size:30px}
 }
+</style>
+</head>
 
-header{
-    background:#fff;
-    padding:18px 7%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    box-shadow:0 2px 10px #ddd;
-    position:sticky;
-    top:0;
-    z-index:10;
-}
+<body>
 
-.logo{
-    font-size:28px;
-    font-weight:bold;
-    letter-spacing:3px;
-}
+<header>
+<div class="logo">CARRY<span>O</span>L</div>
+<nav>
+<a href="#home">Home</a>
+<a href="#products">Products</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
 
-.logo span{
-    color:#b22222;
-}
+<section class="hero" id="home">
+<div>
+<h1>Welcome to CARRYOL</h1>
+<h2>Galvanize G I Doors & Windows</h2>
+<p>Strong. Secure. Stylish. Built for modern homes.</p>
+<a href="#products" class="btn">Explore Products</a>
+<a href="#contact" class="btn">Contact Us</a>
+</div>
+</section>
 
-nav a{
-    color:#222;
-    text-decoration:none;
-    margin-left:20px;
-    font-weight:bold;
-}
+<section id="products">
+<div class="title">
+<h2>Our Products</h2>
+<p>Premium Galvanize G I doors and windows.</p>
+</div>
 
-.hero{
-    min-height:600px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    color:white;
-    padding:40px 20px;
+<div class="products">
 
-    background:
-    linear-gradient(#0008,#0008),
-    url("https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80")
-    center/cover;
-}
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=700&q=80" alt="Galvanize G I Main Gate Door">
+<div><h3>Galvanize G I Main Gate Door</h3>
+<p>Strong main gate designed for security, durability and an elegant entrance.</p></div>
+</div>
 
-.hero h1{
-    font-size:58px;
-    margin-bottom:10px;
-}
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=700&q=80" alt="Galvanize G I Single Door">
+<div><h3>Galvanize G I Single Door</h3>
+<p>Durable single door for homes, offices and commercial spaces.</p></div>
+</div>
 
-.hero h2{
-    font-size:25px;
-    font-weight:normal;
-    margin-bottom:15px;
-}
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=700&q=80" alt="Galvanize G I Double Door">
+<div><h3>Galvanize G I Double Door</h3>
+<p>Stylish double door for larger entrances and premium spaces.</p></div>
+</div>
 
-.hero p{
-    font-size:18px;
-    margin-bottom:25px;
-}
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=700&q=80" alt="Galvanize G I Sliding Door">
+<div><h3>Galvanize G I Sliding Door</h3>
+<p>Modern sliding door offering smooth operation and space saving.</p></div>
+</div>
 
-.btn{
-    display:inline-block;
-    background:#b22222;
-    color:white;
-    text-decoration:none;
-    padding:13px 25px;
-    margin:5px;
-    border-radius:3px;
-    font-weight:bold;
-}
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=700&q=80" alt="Galvanize G I Window Door">
+<div><h3>Galvanize G I Window Door</h3>
+<p>Modern window door designed for ventilation, light and durability.</p></div>
+</div>
 
-section{
-    padding:70px 7%;
-}
+</div>
+</section>
 
-.title{
-    text-align:center;
-    margin-bottom:35px;
-}
-
-.title h2{
-    font-size:36px;
-}
-
-.title p{
-    color:#666;
-}
-
-.products{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:25px;
+<section class="about" id="about">
+<div class="title">
+<h2>About CARRYOL</h2>
+<p>Built for Strength. Designed for Life.</p>
+</div>
+<p>CARRYOL provides modern Galvanize G I doors and windows designed for strength, security and    gap:25px;
 }
 
 .card{
