@@ -4,180 +4,104 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Welcome to CARRYOL | Premium Doors & Windows</title>
-
-<meta name="description"
-content="Welcome to CARRYOL - Premium doors and windows designed for strength, security, durability and modern homes.">
+<title>Welcome to CARRYOL</title>
 
 <style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
+*{box-sizing:border-box;margin:0;padding:0}
 
 body{
-    font-family:Arial,Helvetica,sans-serif;
+    font-family:Arial,sans-serif;
     color:#222;
-    background:#fff;
+    line-height:1.6;
 }
-
-/* TOP BAR */
-
-.topbar{
-    background:#111;
-    color:#fff;
-    text-align:center;
-    padding:10px;
-    font-size:14px;
-}
-
-/* HEADER */
 
 header{
     background:#fff;
-    position:sticky;
-    top:0;
-    z-index:1000;
-    box-shadow:0 2px 12px rgba(0,0,0,.12);
-}
-
-.navbar{
-    max-width:1200px;
-    margin:auto;
-    padding:18px 25px;
+    padding:18px 7%;
     display:flex;
     justify-content:space-between;
     align-items:center;
+    box-shadow:0 2px 10px #ddd;
+    position:sticky;
+    top:0;
+    z-index:10;
 }
 
 .logo{
-    font-size:30px;
-    font-weight:900;
-    letter-spacing:4px;
-    color:#111;
+    font-size:28px;
+    font-weight:bold;
+    letter-spacing:3px;
 }
 
 .logo span{
     color:#b22222;
 }
 
-.nav-links{
-    display:flex;
-    list-style:none;
-    gap:30px;
-}
-
-.nav-links a{
-    text-decoration:none;
+nav a{
     color:#222;
+    text-decoration:none;
+    margin-left:20px;
     font-weight:bold;
 }
 
-.nav-links a:hover{
-    color:#b22222;
-}
-
-.contact-btn{
-    background:#b22222;
-    color:white!important;
-    padding:11px 20px;
-    border-radius:3px;
-}
-
-/* HERO */
-
 .hero{
-    min-height:650px;
-
-    background:
-    linear-gradient(rgba(0,0,0,.58),rgba(0,0,0,.58)),
-    url("https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1800&q=85")
-    center/cover no-repeat;
-
+    min-height:600px;
     display:flex;
-    justify-content:center;
     align-items:center;
-
+    justify-content:center;
     text-align:center;
     color:white;
-    padding:60px 20px;
-}
+    padding:40px 20px;
 
-.hero-content{
-    max-width:900px;
+    background:
+    linear-gradient(#0008,#0008),
+    url("https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80")
+    center/cover;
 }
 
 .hero h1{
-    font-size:65px;
-    font-weight:900;
-    letter-spacing:3px;
-    margin-bottom:15px;
+    font-size:58px;
+    margin-bottom:10px;
 }
 
 .hero h2{
-    font-size:28px;
-    font-weight:400;
-    margin-bottom:20px;
+    font-size:25px;
+    font-weight:normal;
+    margin-bottom:15px;
 }
 
 .hero p{
-    font-size:19px;
-    margin-bottom:30px;
+    font-size:18px;
+    margin-bottom:25px;
 }
 
-.hero-btn{
+.btn{
     display:inline-block;
     background:#b22222;
     color:white;
     text-decoration:none;
-    padding:15px 32px;
+    padding:13px 25px;
     margin:5px;
-    font-weight:bold;
     border-radius:3px;
+    font-weight:bold;
 }
 
-.hero-btn:hover{
-    background:#8e1a1a;
+section{
+    padding:70px 7%;
 }
 
-.hero-btn.light{
-    background:white;
-    color:#111;
-}
-
-/* COMMON SECTION */
-
-.section{
-    padding:80px 20px;
-}
-
-.container{
-    max-width:1150px;
-    margin:auto;
-}
-
-.section-title{
+.title{
     text-align:center;
-    margin-bottom:45px;
+    margin-bottom:35px;
 }
 
-.section-title h2{
-    font-size:40px;
-    margin-bottom:10px;
+.title h2{
+    font-size:36px;
 }
 
-.section-title p{
+.title p{
     color:#666;
-    font-size:17px;
 }
-
-/* PRODUCTS */
 
 .products{
     display:grid;
@@ -185,376 +109,184 @@ header{
     gap:25px;
 }
 
-.product-card{
-    background:#fff;
+.card{
     border:1px solid #ddd;
-    overflow:hidden;
-    transition:.3s;
+    background:white;
 }
 
-.product-card:hover{
-    transform:translateY(-7px);
-    box-shadow:0 12px 30px rgba(0,0,0,.13);
-}
-
-.product-card img{
+.card img{
     width:100%;
-    height:270px;
+    height:230px;
     object-fit:cover;
 }
 
-.product-content{
-    padding:25px;
+.card div{
+    padding:20px;
 }
 
-.product-content h3{
-    font-size:24px;
-    margin-bottom:10px;
+.card h3{
+    font-size:22px;
+    margin-bottom:8px;
 }
 
-.product-content p{
+.card p{
     color:#666;
 }
-
-/* ABOUT */
 
 .about{
     background:#f5f5f5;
+    text-align:center;
 }
 
-.about-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:50px;
-    align-items:center;
-}
-
-.about-img img{
-    width:100%;
-    height:450px;
-    object-fit:cover;
-}
-
-.about-text h2{
-    font-size:40px;
-    margin-bottom:20px;
-}
-
-.about-text p{
+.about p{
+    max-width:800px;
+    margin:10px auto;
     color:#555;
-    margin-bottom:16px;
 }
 
-/* WHY CARRYOL */
-
-.benefits{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:20px;
-}
-
-.benefit{
+.contact{
+    background:#fafafa;
     text-align:center;
-    padding:30px 18px;
-    border:1px solid #ddd;
-    background:white;
 }
 
-.benefit-icon{
-    font-size:40px;
-    margin-bottom:12px;
-}
-
-.benefit h3{
-    margin-bottom:8px;
-    font-size:19px;
-}
-
-.benefit p{
-    color:#666;
-    font-size:14px;
-}
-
-/* CTA */
-
-.cta{
-    background:
-    linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.72)),
-    url("https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1800&q=85")
-    center/cover no-repeat;
-
-    color:white;
-    text-align:center;
-    padding:100px 20px;
-}
-
-.cta h2{
-    font-size:44px;
-    margin-bottom:15px;
-}
-
-.cta p{
-    font-size:19px;
-    margin-bottom:30px;
-}
-
-/* CONTACT */
-
-.contact-section{
-    background:#f7f7f7;
-}
-
-.contact-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:30px;
-}
-
-.contact-box{
-    background:white;
-    padding:35px;
-    border:1px solid #ddd;
-}
-
-.contact-box h3{
-    font-size:26px;
+.contact h2{
+    font-size:36px;
     margin-bottom:20px;
 }
 
-.contact-item{
-    margin-bottom:20px;
+.contact p{
+    margin:8px;
 }
 
-.contact-item strong{
-    display:block;
-    margin-bottom:5px;
-}
-
-.contact-item a{
+.contact a{
     color:#b22222;
-    text-decoration:none;
     font-weight:bold;
+    text-decoration:none;
 }
-
-/* FOOTER */
 
 footer{
     background:#111;
     color:white;
-    padding:50px 20px 20px;
-}
-
-.footer-grid{
-    max-width:1150px;
-    margin:auto;
-
-    display:grid;
-    grid-template-columns:1.5fr 1fr 1fr;
-    gap:40px;
-}
-
-footer h3{
-    margin-bottom:15px;
-    font-size:22px;
-}
-
-footer p,
-footer li{
-    color:#ccc;
-    font-size:14px;
-}
-
-footer ul{
-    list-style:none;
-}
-
-footer li{
-    margin-bottom:8px;
-}
-
-.footer-bottom{
-    max-width:1150px;
-    margin:35px auto 0;
-    padding-top:20px;
-    border-top:1px solid #333;
     text-align:center;
-    color:#999;
-    font-size:13px;
+    padding:35px 20px;
 }
 
-/* MOBILE */
+footer p{
+    color:#ccc;
+    margin:5px;
+}
 
-@media(max-width:850px){
+@media(max-width:700px){
 
-    .nav-links{
-        display:none;
+    header{
+        display:block;
+        text-align:center;
+    }
+
+    nav{
+        margin-top:12px;
+    }
+
+    nav a{
+        margin:0 7px;
+        font-size:13px;
+    }
+
+    .hero{
+        min-height:520px;
     }
 
     .hero h1{
-        font-size:43px;
+        font-size:40px;
     }
 
     .hero h2{
-        font-size:22px;
+        font-size:20px;
     }
 
     .products{
         grid-template-columns:1fr;
     }
 
-    .about-grid{
-        grid-template-columns:1fr;
-    }
-
-    .benefits{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .contact-grid{
-        grid-template-columns:1fr;
-    }
-
-    .footer-grid{
-        grid-template-columns:1fr;
+    .title h2,
+    .contact h2{
+        font-size:30px;
     }
 }
-
-@media(max-width:500px){
-
-    .hero{
-        min-height:560px;
-    }
-
-    .hero h1{
-        font-size:36px;
-    }
-
-    .hero h2{
-        font-size:19px;
-    }
-
-    .benefits{
-        grid-template-columns:1fr;
-    }
-
-    .section-title h2{
-        font-size:31px;
-    }
-
-}
-
 </style>
 </head>
 
 <body>
 
-<!-- TOP -->
-<div class="topbar">
-    Welcome to CARRYOL — Strength • Security • Style
-</div>
-
-
-<!-- HEADER -->
 <header>
 
-<nav class="navbar">
+<div class="logo">
+CARRY<span>O</span>L
+</div>
 
-    <div class="logo">
-        CARRY<span>O</span>L
-    </div>
-
-    <ul class="nav-links">
-
-        <li>
-            <a href="#home">Home</a>
-        </li>
-
-        <li>
-            <a href="#products">Products</a>
-        </li>
-
-        <li>
-            <a href="#about">About Us</a>
-        </li>
-
-        <li>
-            <a href="#why">Why CARRYOL</a>
-        </li>
-
-        <li>
-            <a class="contact-btn" href="#contact">
-                Contact Us
-            </a>
-        </li>
-
-    </ul>
-
+<nav>
+<a href="#home">Home</a>
+<a href="#products">Products</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
 </nav>
 
 </header>
 
 
-<!-- HERO -->
 <section class="hero" id="home">
 
-<div class="hero-content">
+<div>
 
-    <h1>Welcome to CARRYOL</h1>
+<h1>Welcome to CARRYOL</h1>
 
-    <h2>
-        Premium Doors & Windows
-        for Modern Homes
-    </h2>
+<h2>Premium Doors & Windows</h2>
 
-    <p>
-        Strong. Secure. Stylish. Built for everyday life.
-    </p>
+<p>
+Strong. Secure. Stylish. Built for modern homes.
+</p>
 
-    <a href="#products" class="hero-btn">
-        Explore Products
-    </a>
+<a href="#products" class="btn">
+Explore Products
+</a>
 
-    <a href="#contact" class="hero-btn light">
-        Contact Us
-    </a>
+<a href="#contact" class="btn">
+Contact Us
+</a>
 
 </div>
 
 </section>
 
 
-<!-- PRODUCTS -->
-<section class="section" id="products">
+<section id="products">
 
-<div class="container">
+<div class="title">
 
-<div class="section-title">
+<h2>Our Products</h2>
 
-    <h2>Our Products</h2>
-
-    <p>
-        Premium solutions designed for modern spaces.
-    </p>
+<p>
+Quality doors and windows for modern spaces.
+</p>
 
 </div>
 
 
 <div class="products">
 
-
-<div class="product-card">
+<div class="card">
 
 <img
-src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=85"
-alt="CARRYOL Premium Doors">
+src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=800&q=80"
+alt="CARRYOL Doors">
 
-<div class="product-content">
+<div>
 
 <h3>Premium Doors</h3>
 
 <p>
-Elegant and durable doors designed
-for homes, offices and commercial spaces.
+Strong and stylish doors designed for homes,
+offices and commercial spaces.
 </p>
 
 </div>
@@ -562,19 +294,19 @@ for homes, offices and commercial spaces.
 </div>
 
 
-<div class="product-card">
+<div class="card">
 
 <img
-src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=85"
+src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80"
 alt="CARRYOL Windows">
 
-<div class="product-content">
+<div>
 
 <h3>Modern Windows</h3>
 
 <p>
-Stylish windows designed for
-natural light, ventilation and durability.
+Modern windows designed for beauty,
+ventilation and durability.
 </p>
 
 </div>
@@ -582,71 +314,20 @@ natural light, ventilation and durability.
 </div>
 
 
-<div class="product-card">
+<div class="card">
 
 <img
-src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=85"
-alt="CARRYOL Home Solutions">
+src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80"
+alt="CARRYOL Home">
 
-<div class="product-content">
+<div>
 
 <h3>Home Solutions</h3>
 
 <p>
-Modern solutions combining
-design, strength and performance.
+Reliable solutions combining modern design
+with everyday strength.
 </p>
-
-</div>
-
-</div>
-
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- ABOUT -->
-<section class="section about" id="about">
-
-<div class="container">
-
-<div class="about-grid">
-
-<div class="about-img">
-
-<img
-src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=85"
-alt="CARRYOL">
-
-</div>
-
-
-<div class="about-text">
-
-<h2>
-Built for Strength.
-Designed for Life.
-</h2>
-
-<p>
-CARRYOL brings together modern design,
-dependable construction and practical
-solutions for today's homes.
-</p>
-
-<p>
-Our goal is simple — to provide doors
-and windows that look premium, perform
-reliably and provide lasting value.
-</p>
-
-<a href="#contact" class="hero-btn">
-Contact CARRYOL
-</a>
 
 </div>
 
@@ -657,296 +338,79 @@ Contact CARRYOL
 </section>
 
 
-<!-- WHY CARRYOL -->
-<section class="section" id="why">
+<section class="about" id="about">
 
-<div class="container">
+<div class="title">
 
-<div class="section-title">
-
-<h2>Why Choose CARRYOL?</h2>
+<h2>About CARRYOL</h2>
 
 <p>
-Quality, performance and design you can trust.
+Built for Strength. Designed for Life.
 </p>
 
 </div>
 
-
-<div class="benefits">
-
-
-<div class="benefit">
-
-<div class="benefit-icon">
-🛡️
-</div>
-
-<h3>
-Strong & Secure
-</h3>
-
 <p>
-Designed to provide dependable
-security for your space.
+CARRYOL brings modern design, dependable construction
+and practical solutions for today's homes.
 </p>
 
-</div>
-
-
-<div class="benefit">
-
-<div class="benefit-icon">
-🏠
-</div>
-
-<h3>
-Modern Design
-</h3>
-
 <p>
-Contemporary designs that
-complement modern architecture.
+Our focus is to provide premium doors and windows
+that deliver strength, security and lasting value.
 </p>
-
-</div>
-
-
-<div class="benefit">
-
-<div class="benefit-icon">
-⚙️
-</div>
-
-<h3>
-Durable
-</h3>
-
-<p>
-Built for everyday use and
-long-lasting performance.
-</p>
-
-</div>
-
-
-<div class="benefit">
-
-<div class="benefit-icon">
-✨
-</div>
-
-<h3>
-Premium Finish
-</h3>
-
-<p>
-Clean finishes that give your
-space a premium appearance.
-</p>
-
-</div>
-
-
-</div>
-
-</div>
 
 </section>
 
 
-<!-- CTA -->
-<section class="cta">
+<section class="contact" id="contact">
 
-<h2>
-Make Your Space Stronger & Smarter
-</h2>
+<h2>Contact CARRYOL</h2>
 
 <p>
-Discover the CARRYOL range of doors and windows.
-</p>
-
-<a href="#contact" class="hero-btn">
-Get in Touch
-</a>
-
-</section>
-
-
-<!-- CONTACT -->
-<section class="section contact-section" id="contact">
-
-<div class="container">
-
-<div class="section-title">
-
-<h2>
-Contact CARRYOL
-</h2>
-
-<p>
-Get in touch with us for product enquiries.
-</p>
-
-</div>
-
-
-<div class="contact-grid">
-
-
-<div class="contact-box">
-
-<h3>
-Contact Information
-</h3>
-
-
-<div class="contact-item">
-
-<strong>
-Phone
-</strong>
-
+<strong>Phone:</strong>
 <a href="tel:+917270822500">
 +91 72708 22500
 </a>
-
-</div>
-
-
-<div class="contact-item">
-
-<strong>
-Address
-</strong>
-
-<p>
-203 K/265, Nai Basti,<br>
-Balaganj, Lucknow
 </p>
 
-</div>
-
-</div>
-
-
-<div class="contact-box">
-
-<h3>
-Visit CARRYOL
-</h3>
-
 <p>
-We are here to help you choose
-the right doors and windows for
-your home or project.
+<strong>Address:</strong><br>
+203 K/265, Nai Basti,<br>
+Balaganj, Lucknow
 </p>
 
 <br>
 
 <a
+class="btn"
 href="https://www.google.com/maps/search/?api=1&query=203%20K%2F265%20Nai%20Basti%20Balaganj%20Lucknow"
-target="_blank"
-class="hero-btn">
-
+target="_blank">
 View Location
-
 </a>
-
-</div>
-
-
-</div>
-
-</div>
 
 </section>
 
 
-<!-- FOOTER -->
 <footer>
 
-<div class="footer-grid">
-
-
-<div>
-
-<h3>
-CARRYOL
-</h3>
+<h3>CARRYOL</h3>
 
 <p>
-Premium doors and windows designed
-for strength, security, durability
-and modern living.
+Premium Doors & Windows
 </p>
-
-</div>
-
-
-<div>
-
-<h3>
-Quick Links
-</h3>
-
-<ul>
-
-<li>
-<a href="#home" style="color:#ccc;">
-Home
-</a>
-</li>
-
-<li>
-<a href="#products" style="color:#ccc;">
-Products
-</a>
-</li>
-
-<li>
-<a href="#about" style="color:#ccc;">
-About Us
-</a>
-</li>
-
-<li>
-<a href="#contact" style="color:#ccc;">
-Contact
-</a>
-</li>
-
-</ul>
-
-</div>
-
-
-<div>
-
-<h3>
-Contact
-</h3>
 
 <p>
 +91 72708 22500
 </p>
 
 <p>
-203 K/265, Nai Basti,<br>
-Balaganj, Lucknow
+203 K/265, Nai Basti, Balaganj, Lucknow
 </p>
 
-</div>
-
-
-</div>
-
-
-<div class="footer-bottom">
-
+<p>
 © 2026 CARRYOL. All Rights Reserved.
-
-</div>
+</p>
 
 </footer>
 
