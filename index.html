@@ -3,11 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
 <title>Welcome to Carryol | GI Windows & Doors</title>
+
 <meta name="description" content="Carryol manufactures premium galvanized iron windows and doors designed for strength, security, durability and modern homes.">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth
+}
 
 body{
 font-family:Arial,Helvetica,sans-serif;
@@ -57,7 +64,10 @@ margin-top:3px;
 text-align:center
 }
 
-.small-title,.product-link{color:#b98a2f}
+.small-title,
+.product-link{
+color:#b98a2f
+}
 
 nav ul{
 list-style:none;
@@ -74,7 +84,12 @@ color:#222;
 font-weight:600
 }
 
-.nav-btn,.btn-primary{
+nav a:hover{
+color:#b98a2f
+}
+
+.nav-btn,
+.btn-primary{
 background:#b98a2f!important;
 color:#fff!important;
 padding:12px 20px;
@@ -83,7 +98,10 @@ border-radius:3px
 
 .hero{
 min-height:650px;
-background:linear-gradient(#0008,#000a),url('https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=2000&q=85') center/cover;
+background:
+linear-gradient(#0008,#000a),
+url('https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=2000&q=85')
+center/cover;
 display:flex;
 align-items:center;
 justify-content:center;
@@ -98,7 +116,9 @@ line-height:1.05;
 margin-bottom:25px
 }
 
-.hero h1 span{color:#d3a94e}
+.hero h1 span{
+color:#d3a94e
+}
 
 .hero p{
 font-size:20px;
@@ -126,7 +146,14 @@ border:1px solid #fff;
 color:#fff
 }
 
-section{padding:90px 20px}
+.btn-outline:hover{
+background:#fff;
+color:#222
+}
+
+section{
+padding:90px 20px
+}
 
 .container{
 max-width:1200px;
@@ -156,9 +183,13 @@ margin:15px auto;
 color:#666
 }
 
-.products,.gi-section,.contact{background:#fff}
+.products,
+.gi-section,
+.contact{
+background:#fff
+}
 
-.product-grid,.gallery-grid{
+.product-grid{
 display:grid;
 grid-template-columns:repeat(3,1fr);
 gap:25px
@@ -176,14 +207,18 @@ object-fit:cover;
 display:block
 }
 
-.product-info{padding:25px}
+.product-info{
+padding:25px
+}
 
 .product-info h3{
 font-size:23px;
 margin-bottom:8px
 }
 
-.product-info p{color:#666}
+.product-info p{
+color:#666
+}
 
 .product-link{
 display:inline-block;
@@ -192,9 +227,12 @@ text-decoration:none;
 font-weight:bold
 }
 
-.about{background:#eee}
+.about{
+background:#eee
+}
 
-.about-grid,.contact-grid{
+.about-grid,
+.contact-grid{
 display:grid;
 grid-template-columns:1fr 1fr;
 gap:60px;
@@ -222,7 +260,9 @@ background:#111;
 color:#fff
 }
 
-.features .section-heading p{color:#bbb}
+.features .section-heading p{
+color:#bbb
+}
 
 .feature-grid{
 display:grid;
@@ -258,23 +298,37 @@ background:#f4f4f4;
 border-left:4px solid #b98a2f
 }
 
-.gi-box p{color:#666}
+.gi-box p{
+color:#666
+}
 
-.gallery{background:#eee}
+.gallery{
+background:#eee
+}
 
 .gallery-grid{
+display:grid;
 grid-template-columns:repeat(4,1fr);
 gap:15px
+}
+
+.gallery-item{
+background:#fff;
+overflow:hidden;
+text-align:center
 }
 
 .gallery-grid img{
 width:100%;
 height:270px;
 object-fit:cover;
-display:block
+display:block;
+transition:transform .3s ease
 }
 
-.gallery-item{text-align:center}
+.gallery-item:hover img{
+transform:scale(1.03)
+}
 
 .caption{
 background:#fff;
@@ -285,7 +339,10 @@ color:#222
 }
 
 .cta{
-background:linear-gradient(#000b,#000b),url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=2000&q=85') center/cover;
+background:
+linear-gradient(#000b,#000b),
+url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=2000&q=85')
+center/cover;
 color:#fff;
 text-align:center
 }
@@ -301,18 +358,28 @@ margin:0 auto 30px;
 color:#ddd
 }
 
-.contact-grid{gap:50px}
+.contact-grid{
+gap:50px
+}
 
 .contact-info h2{
 font-size:38px;
 margin:15px 0 20px
 }
 
-.contact-item{margin:20px 0}
+.contact-info>p{
+color:#555;
+margin-bottom:25px
+}
+
+.contact-item{
+margin:22px 0
+}
 
 .contact-item strong{
 display:block;
-color:#b98a2f
+color:#b98a2f;
+margin-bottom:5px
 }
 
 .contact-item a{
@@ -320,12 +387,31 @@ color:#222;
 text-decoration:none
 }
 
+.contact-item a:hover{
+color:#b98a2f
+}
+
+.whatsapp-contact{
+display:inline-block;
+background:#25d366;
+color:#fff!important;
+padding:11px 18px;
+border-radius:4px;
+font-weight:bold
+}
+
+.address{
+line-height:1.7
+}
+
 form{
 background:#f4f4f4;
 padding:35px
 }
 
-input,textarea,select{
+input,
+textarea,
+select{
 width:100%;
 padding:14px;
 margin-bottom:15px;
@@ -334,7 +420,10 @@ font-size:15px;
 background:#fff
 }
 
-textarea{height:130px}
+textarea{
+height:130px;
+resize:vertical
+}
 
 button{
 border:0;
@@ -362,13 +451,30 @@ color:#fff;
 margin-bottom:15px
 }
 
-footer ul{list-style:none}
+footer ul{
+list-style:none
+}
 
-footer li{margin:8px 0}
+footer li{
+margin:8px 0
+}
 
 footer a{
 color:#aaa;
 text-decoration:none
+}
+
+footer a:hover{
+color:#d3a94e
+}
+
+.footer-contact{
+margin-top:15px
+}
+
+.footer-contact a{
+display:block;
+margin:7px 0
 }
 
 .copyright{
@@ -383,8 +489,8 @@ font-size:13px
 position:fixed;
 right:20px;
 bottom:20px;
-width:58px;
-height:58px;
+width:60px;
+height:60px;
 border-radius:50%;
 background:#25d366;
 color:#fff;
@@ -392,13 +498,19 @@ display:flex;
 align-items:center;
 justify-content:center;
 text-decoration:none;
-font-size:25px;
-z-index:999
+font-size:28px;
+z-index:9999;
+box-shadow:0 4px 15px #0004
+}
+
+.whatsapp:hover{
+transform:scale(1.08)
 }
 
 @media(max-width:900px){
 
-.product-grid,.feature-grid{
+.product-grid,
+.feature-grid{
 grid-template-columns:repeat(2,1fr)
 }
 
@@ -406,8 +518,13 @@ grid-template-columns:repeat(2,1fr)
 grid-template-columns:repeat(2,1fr)
 }
 
-.about-grid,.contact-grid{
+.about-grid,
+.contact-grid{
 grid-template-columns:1fr
+}
+
+nav{
+gap:15px
 }
 
 }
@@ -420,24 +537,44 @@ gap:12px;
 padding:12px 15px
 }
 
-.logo img{width:190px}
+.logo img{
+width:190px
+}
 
 nav ul{
 gap:12px;
 font-size:14px
 }
 
-.product-grid,.feature-grid,.gi-grid,.gallery-grid{
+.product-grid,
+.feature-grid,
+.gi-grid,
+.gallery-grid{
 grid-template-columns:1fr
 }
 
-.about-image img{height:350px}
+.about-image img{
+height:350px
+}
 
-.cta h2{font-size:35px}
+.cta h2{
+font-size:35px
+}
 
-.hero{min-height:560px}
+.hero{
+min-height:560px
+}
 
-.hero h1{font-size:45px}
+.hero h1{
+font-size:45px
+}
+
+.whatsapp{
+width:55px;
+height:55px;
+right:15px;
+bottom:15px
+}
 
 }
 </style>
@@ -445,7 +582,10 @@ grid-template-columns:1fr
 
 <body>
 
+<!-- HEADER -->
+
 <header>
+
 <nav>
 
 <div class="logo">
@@ -459,17 +599,41 @@ Safety, Security, Reliability.
 </div>
 
 <ul>
-<li><a href="#home">Home</a></li>
-<li><a href="#products">Products</a></li>
-<li><a href="#about">About Us</a></li>
-<li><a href="#why-us">Why Carryol</a></li>
-<li><a href="#gallery">Gallery</a></li>
-<li><a href="#contact" class="nav-btn">Get a Quote</a></li>
+
+<li>
+<a href="#home">Home</a>
+</li>
+
+<li>
+<a href="#products">Products</a>
+</li>
+
+<li>
+<a href="#about">About Us</a>
+</li>
+
+<li>
+<a href="#why-us">Why Carryol</a>
+</li>
+
+<li>
+<a href="#gallery">Gallery</a>
+</li>
+
+<li>
+<a href="#contact" class="nav-btn">
+Contact Us
+</a>
+</li>
+
 </ul>
 
 </nav>
+
 </header>
 
+
+<!-- HOME -->
 
 <section class="hero" id="home">
 
@@ -501,15 +665,21 @@ Contact Us
 </section>
 
 
+<!-- PRODUCTS -->
+
 <section class="products" id="products">
 
 <div class="container">
 
 <div class="section-heading">
 
-<div class="small-title">Our Collection</div>
+<div class="small-title">
+Our Collection
+</div>
 
-<h2>GI Windows & Doors</h2>
+<h2>
+GI Windows & Doors
+</h2>
 
 <p>
 Discover strong, stylish and long-lasting GI solutions designed for modern homes and buildings.
@@ -526,7 +696,9 @@ Discover strong, stylish and long-lasting GI solutions designed for modern homes
 
 <div class="product-info">
 
-<h3>GI Main Doors</h3>
+<h3>
+GI Main Doors
+</h3>
 
 <p>
 Strong and elegant galvanized iron doors designed to create a secure entrance.
@@ -537,6 +709,7 @@ Enquire Now →
 </a>
 
 </div>
+
 </div>
 
 
@@ -546,7 +719,9 @@ Enquire Now →
 
 <div class="product-info">
 
-<h3>GI Designer Doors</h3>
+<h3>
+GI Designer Doors
+</h3>
 
 <p>
 Contemporary designs combining premium appearance with dependable strength.
@@ -557,6 +732,7 @@ Enquire Now →
 </a>
 
 </div>
+
 </div>
 
 
@@ -566,7 +742,9 @@ Enquire Now →
 
 <div class="product-info">
 
-<h3>GI Windows</h3>
+<h3>
+GI Windows
+</h3>
 
 <p>
 Durable galvanized iron windows made for ventilation, security and long-term performance.
@@ -577,13 +755,17 @@ Enquire Now →
 </a>
 
 </div>
+
 </div>
 
 </div>
+
 </div>
 
 </section>
 
+
+<!-- ABOUT -->
 
 <section class="about" id="about">
 
@@ -599,9 +781,13 @@ Enquire Now →
 
 <div class="about-text">
 
-<div class="small-title">About Carryol</div>
+<div class="small-title">
+About Carryol
+</div>
 
-<h2>Strength You Can Trust</h2>
+<h2>
+Strength You Can Trust
+</h2>
 
 <p>
 Carryol is focused on manufacturing premium galvanized iron windows and doors for homes, commercial spaces and modern construction projects.
@@ -618,10 +804,13 @@ Talk to Us
 </div>
 
 </div>
+
 </div>
 
 </section>
 
+
+<!-- WHY CARRYOL -->
 
 <section class="features" id="why-us">
 
@@ -629,9 +818,13 @@ Talk to Us
 
 <div class="section-heading">
 
-<div class="small-title">Why Carryol</div>
+<div class="small-title">
+Why Carryol
+</div>
 
-<h2>Made for the Long Run</h2>
+<h2>
+Made for the Long Run
+</h2>
 
 <p>
 Every Carryol product is designed around quality, performance and everyday usability.
@@ -644,9 +837,13 @@ Every Carryol product is designed around quality, performance and everyday usabi
 
 <div class="feature">
 
-<div class="feature-icon">🛡️</div>
+<div class="feature-icon">
+🛡️
+</div>
 
-<h3>Strong & Secure</h3>
+<h3>
+Strong & Secure
+</h3>
 
 <p>
 Robust construction designed to provide dependable security.
@@ -657,9 +854,13 @@ Robust construction designed to provide dependable security.
 
 <div class="feature">
 
-<div class="feature-icon">⚙️</div>
+<div class="feature-icon">
+⚙️
+</div>
 
-<h3>Durable Build</h3>
+<h3>
+Durable Build
+</h3>
 
 <p>
 GI construction engineered for long-lasting everyday performance.
@@ -670,9 +871,13 @@ GI construction engineered for long-lasting everyday performance.
 
 <div class="feature">
 
-<div class="feature-icon">✨</div>
+<div class="feature-icon">
+✨
+</div>
 
-<h3>Modern Designs</h3>
+<h3>
+Modern Designs
+</h3>
 
 <p>
 Contemporary designs that complement modern architecture.
@@ -683,9 +888,13 @@ Contemporary designs that complement modern architecture.
 
 <div class="feature">
 
-<div class="feature-icon">🔧</div>
+<div class="feature-icon">
+🔧
+</div>
 
-<h3>Low Maintenance</h3>
+<h3>
+Low Maintenance
+</h3>
 
 <p>
 Practical products designed to reduce maintenance requirements.
@@ -694,10 +903,13 @@ Practical products designed to reduce maintenance requirements.
 </div>
 
 </div>
+
 </div>
 
 </section>
 
+
+<!-- GI ADVANTAGE -->
 
 <section class="gi-section">
 
@@ -705,9 +917,13 @@ Practical products designed to reduce maintenance requirements.
 
 <div class="section-heading">
 
-<div class="small-title">The Carryol Advantage</div>
+<div class="small-title">
+The Carryol Advantage
+</div>
 
-<h2>Why Galvanized Iron?</h2>
+<h2>
+Why Galvanized Iron?
+</h2>
 
 </div>
 
@@ -716,7 +932,9 @@ Practical products designed to reduce maintenance requirements.
 
 <div class="gi-box">
 
-<h3>01 — Corrosion Protection</h3>
+<h3>
+01 — Corrosion Protection
+</h3>
 
 <p>
 Galvanized surfaces are designed to provide enhanced protection against corrosion.
@@ -727,7 +945,9 @@ Galvanized surfaces are designed to provide enhanced protection against corrosio
 
 <div class="gi-box">
 
-<h3>02 — Long-Term Performance</h3>
+<h3>
+02 — Long-Term Performance
+</h3>
 
 <p>
 A strong material choice for doors and windows intended for long-term use.
@@ -738,4 +958,550 @@ A strong material choice for doors and windows intended for long-term use.
 
 <div class="gi-box">
 
-<h3>03 — Strong Construction</
+<h3>
+03 — Strong Construction
+</h3>
+
+<p>
+GI provides a solid foundation for durable window and door structures.
+</p>
+
+</div>
+
+
+<div class="gi-box">
+
+<h3>
+04 — Modern Finish
+</h3>
+
+<p>
+Combine strength with clean designs suitable for contemporary architecture.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- GALLERY -->
+
+<section class="gallery" id="gallery">
+
+<div class="container">
+
+<div class="section-heading">
+
+<div class="small-title">
+Our Work
+</div>
+
+<h2>
+Explore Carryol Gallery
+</h2>
+
+<p>
+Explore our collection of GI doors, windows and other Carryol products.
+</p>
+
+</div>
+
+<div class="gallery-grid">
+
+
+<div class="gallery-item">
+
+<img src="Images/Screenshot_20260918_164713.jpg" alt="GI Main Door">
+
+<div class="caption">
+Main Door
+</div>
+
+</div>
+
+
+<div class="gallery-item">
+
+<img src="Images/Screenshot_20260918_164726.jpg" alt="GI Designer Door">
+
+<div class="caption">
+Designer Door
+</div>
+
+</div>
+
+
+<div class="gallery-item">
+
+<img src="Images/Screenshot_20260918_164818.jpg" alt="GI Window">
+
+<div class="caption">
+GI Window
+</div>
+
+</div>
+
+
+<div class="gallery-item">
+
+<img src="Images/Screenshot_20260918_164847.jpg" alt="Carryol Product">
+
+<div class="caption">
+Carryol Product
+</div>
+
+</div>
+
+
+<div class="gallery-item">
+
+<img src="Images/Screenshot_20260918_164914.jpg" alt="GI Door">
+
+<div class="caption">
+GI Door
+</div>
+
+</div>
+
+
+<div class="gallery-item">
+
+<img src="Images/Screenshot_20260918_165003.jpg" alt="GI Door Design">
+
+<div class="caption">
+GI Door Design
+</div>
+
+</div>
+
+
+<div class="gallery-item">
+
+<img src="Images/Screenshot_20260918_165018.jpg" alt="GI Door">
+
+<div class="caption">
+GI Door
+</div>
+
+</div>
+
+
+<div class="gallery-item">
+
+<img src="Images/Screenshot_20260918_165042.jpg" alt="GI Product">
+
+<div class="caption">
+GI Product
+</div>
+
+</div>
+
+
+<div class="gallery-item">
+
+<img src="Images/Screenshot_20260918_165116.jpg" alt="GI Door">
+
+<div class="caption">
+GI Door
+</div>
+
+</div>
+
+
+<div class="gallery-item">
+
+<img src="Images/Screenshot_20260918_165140.jpg" alt="GI Product">
+
+<div class="caption">
+GI Product
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+<div class="container">
+
+<h2>
+Let's Build Something Strong.
+</h2>
+
+<p>
+Looking for premium GI windows or doors? Talk to Carryol for product information, customization and project requirements.
+</p>
+
+<a href="#contact" class="btn btn-primary">
+Get a Quote
+</a>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<div class="container">
+
+<div class="section-heading">
+
+<div class="small-title">
+Contact Us
+</div>
+
+<h2>
+Get in Touch with Carryol
+</h2>
+
+<p>
+For product information, quotations, customization and project requirements, contact us directly.
+</p>
+
+</div>
+
+
+<div class="contact-grid">
+
+
+<div class="contact-info">
+
+<div class="small-title">
+Carryol Contact Details
+</div>
+
+<h2>
+We're Here to Help
+</h2>
+
+<p>
+Share your requirement with us and our team will help you with the right GI windows and doors.
+</p>
+
+
+<div class="contact-item">
+
+<strong>
+Phone
+</strong>
+
+<a href="tel:+917270822500">
++91 7270822500
+</a>
+
+</div>
+
+
+<div class="contact-item">
+
+<strong>
+WhatsApp
+</strong>
+
+<a
+class="whatsapp-contact"
+href="https://wa.me/917270822500"
+target="_blank">
+
+💬 Chat with us on WhatsApp
+
+</a>
+
+</div>
+
+
+<div class="contact-item">
+
+<strong>
+Email
+</strong>
+
+<a href="mailto:info@carryol.in">
+info@carryol.in
+</a>
+
+</div>
+
+
+<div class="contact-item">
+
+<strong>
+Address
+</strong>
+
+<div class="address">
+
+203 K / 265, Nai Basti,<br>
+Balaganj, Lucknow
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<!-- CONTACT FORM -->
+
+<form onsubmit="sendMessage(event)">
+
+<input
+id="name"
+type="text"
+placeholder="Your Name"
+required>
+
+<input
+id="phone"
+type="tel"
+placeholder="Phone Number"
+required>
+
+<select id="product" required>
+
+<option value="">
+Select Product
+</option>
+
+<option>
+GI Main Door
+</option>
+
+<option>
+GI Designer Door
+</option>
+
+<option>
+GI Window
+</option>
+
+<option>
+Other
+</option>
+
+</select>
+
+<textarea
+id="message"
+placeholder="Tell us about your requirement..."
+required>
+</textarea>
+
+<button
+type="submit"
+class="btn btn-primary">
+
+Send Enquiry on WhatsApp
+
+</button>
+
+</form>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="footer-grid">
+
+
+<div>
+
+<h3>
+CARRYOL
+</h3>
+
+<p>
+Premium galvanized iron windows and doors built for strength, security and modern living.
+</p>
+
+<div class="footer-contact">
+
+<a href="tel:+917270822500">
+📞 +91 7270822500
+</a>
+
+<a href="mailto:info@carryol.in">
+✉ info@carryol.in
+</a>
+
+<a href="https://wa.me/917270822500" target="_blank">
+💬 WhatsApp
+</a>
+
+</div>
+
+</div>
+
+
+<div>
+
+<h3>
+Quick Links
+</h3>
+
+<ul>
+
+<li>
+<a href="#home">
+Home
+</a>
+</li>
+
+<li>
+<a href="#products">
+Products
+</a>
+</li>
+
+<li>
+<a href="#about">
+About Us
+</a>
+</li>
+
+<li>
+<a href="#why-us">
+Why Carryol
+</a>
+</li>
+
+<li>
+<a href="#gallery">
+Gallery
+</a>
+</li>
+
+<li>
+<a href="#contact">
+Contact Us
+</a>
+</li>
+
+</ul>
+
+</div>
+
+
+<div>
+
+<h3>
+Products
+</h3>
+
+<ul>
+
+<li>
+GI Main Doors
+</li>
+
+<li>
+GI Designer Doors
+</li>
+
+<li>
+GI Windows
+</li>
+
+<li>
+Custom Solutions
+</li>
+
+</ul>
+
+</div>
+
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 Carryol. All Rights Reserved.
+
+</div>
+
+</footer>
+
+
+<!-- FLOATING WHATSAPP -->
+
+<a
+class="whatsapp"
+href="https://wa.me/917270822500"
+target="_blank"
+aria-label="Chat with Carryol on WhatsApp">
+
+💬
+
+</a>
+
+
+<!-- WHATSAPP FORM SCRIPT -->
+
+<script>
+
+function sendMessage(e){
+
+e.preventDefault();
+
+const name =
+document.getElementById('name').value;
+
+const phone =
+document.getElementById('phone').value;
+
+const product =
+document.getElementById('product').value;
+
+const message =
+document.getElementById('message').value;
+
+const text =
+`Hello Carryol,
+
+Name: ${name}
+
+Phone: ${phone}
+
+Product: ${product}
+
+Requirement:
+${message}`;
+
+window.open(
+'https://wa.me/917270822500?text=' +
+encodeURIComponent(text),
+'_blank'
+);
+
+}
+
+</script>
+
+</body>
+</html>
